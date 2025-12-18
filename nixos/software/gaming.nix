@@ -1,7 +1,10 @@
 {pkgs, ...}: {
   programs.steam = {
     enable = true;
-    extraCompatPackages = with pkgs; [proton-ge-bin];
+    extraCompatPackages = with pkgs.nur.repos.mio; [
+      proton-ge-custom
+      proton-cachyos_x86_64_v3
+    ];
   };
 
   programs.gamemode = {
@@ -15,7 +18,6 @@
 
   environment.systemPackages = with pkgs; [
     prismlauncher
-    protonup-qt
     osu-lazer-bin # appimage ver with online score
     heroic
   ];

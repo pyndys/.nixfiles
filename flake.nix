@@ -61,6 +61,7 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./nixos/configuration.nix
+        nur.modules.nixos.default
         nix-flatpak.nixosModules.nix-flatpak
         stylix.nixosModules.stylix
       ];
