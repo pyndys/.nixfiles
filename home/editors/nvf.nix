@@ -3,18 +3,24 @@
     enable = true;
 
     settings.vim = {
+      globals.mapleader = "alt";
       autopairs.nvim-autopairs.enable = true;
       git.gitsigns.enable = true;
-      filetree.nvimTree.enable = true;
       statusline.lualine.enable = true;
+      dashboard.alpha.enable = true;
 
-      keymaps = [
-        {
-          key = "<leader>b";
-          mode = "n";
-          action = ":NvimTreeToggle<CR>";
-        }
-      ];
+      filetree.nvimTree = {
+        enable = true;
+        mappings.toggle = "b";
+        openOnSetup = false;
+        setupOpts = {
+          git.enable = true;
+          renderer = {
+            highlight_git = true;
+            highlight_opened_files = "all";
+          };
+        };
+      };
 
       clipboard = {
         enable = true;
