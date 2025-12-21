@@ -4,10 +4,11 @@
     enableReleaseChecks = false;
 
     image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/m9/wallhaven-m9q6e9.jpg";
-      hash = "sha256-5tYUMASHV9Wsu2MpbhdsFXKtm+NP2hz074N4o9Xu0xE=";
+      url = "https://w.wallhaven.cc/full/we/wallhaven-weprop.jpg";
+      hash = "sha256-PS0O+IG8Mw5xLjMRcYM6mEtCwEOismM+DMzTpI4Qdac=";
     };
-    polarity = "dark";
+
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 
     fonts = {
       sansSerif.name = "Adwaita Sans";

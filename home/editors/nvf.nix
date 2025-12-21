@@ -3,12 +3,23 @@
     enable = true;
 
     settings.vim = {
-      lineNumberMode = "number";
-      clipboard.enable = true;
       autopairs.nvim-autopairs.enable = true;
       git.gitsigns.enable = true;
       filetree.nvimTree.enable = true;
       statusline.lualine.enable = true;
+
+      keymaps = [
+        {
+          key = "<leader>b";
+          mode = "n";
+          action = ":NvimTreeToggle<CR>";
+        }
+      ];
+
+      clipboard = {
+        enable = true;
+        providers.wl-copy.enable = true;
+      };
 
       lsp = {
         enable = true;
