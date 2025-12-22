@@ -4,7 +4,7 @@
     pkgs.runCommand "filtered-hosts" {} ''
       ${pkgs.gnused}/bin/sed '/api\.github\.com/d' ${pkgs.fetchurl {
         url = "https://raw.githubusercontent.com/ImMALWARE/dns.malw.link/master/hosts";
-        sha256 = "sha256-bR0nAmbCpCV3FUICKCEO2QeXxtps1IOMYe7CsZWviJs=";
+        sha256 = "sha256-1eWFHdiKFyW97NCNm4/ZpiCKNI4HVChyCDG9qk+ZaUA=";
       }} > $out
     ''
   );
