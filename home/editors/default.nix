@@ -1,7 +1,7 @@
 {
   imports = [
     ./nvf.nix
-    #./helix.nix
+    ./helix.nix
     #./vscode.nix
   ];
 }
