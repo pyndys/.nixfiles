@@ -22,6 +22,11 @@
         };
       };
 
+      fzf-lua = {
+        enable = true;
+        profile = "skim";
+      };
+
       clipboard = {
         enable = true;
         providers.wl-copy.enable = true;
@@ -51,6 +56,8 @@
         };
 
         go.enable = true;
+
+        bash.enable = true;
 
         markdown = {
           enable = true;
