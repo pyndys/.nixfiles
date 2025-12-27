@@ -8,6 +8,7 @@
       efi.canTouchEfiVariables = true;
       timeout = 0;
     };
+    blacklistedKernelModules = ["nouveau" "nova_core"];
 
     tmp.cleanOnBoot = true;
 

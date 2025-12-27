@@ -16,12 +16,14 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 
-    zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        home-manager.follows = "home-manager";
-      };
+    nvf = {
+      url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     stylix = {
@@ -32,14 +34,12 @@
       };
     };
 
-    spicetify-nix = {
-      url = "github:Gerg-L/spicetify-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    nvf = {
-      url = "github:notashelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
     };
   };
 
@@ -47,11 +47,6 @@
     nixpkgs,
     home-manager,
     nur,
-    nix-flatpak,
-    stylix,
-    spicetify-nix,
-    zen-browser,
-    nvf,
     ...
   }: let
     system = "x86_64-linux";
@@ -62,8 +57,6 @@
       modules = [
         ./nixos/configuration.nix
         nur.modules.nixos.default
-        nix-flatpak.nixosModules.nix-flatpak
-        stylix.nixosModules.stylix
       ];
     };
     homeConfigurations.pyndys = home-manager.lib.homeManagerConfiguration {
@@ -72,10 +65,6 @@
       modules = [
         ./home/home.nix
         nur.modules.homeManager.default
-        zen-browser.homeModules.beta
-        stylix.homeModules.stylix
-        spicetify-nix.homeManagerModules.spicetify
-        nvf.homeManagerModules.default
       ];
     };
   };
