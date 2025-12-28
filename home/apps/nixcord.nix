@@ -20,6 +20,7 @@
           maxSize = 5.0;
           typeOfSnow = "solid";
         };
+        spotifyActivityToggle.enable = true;
         whoReacted.enable = true;
       };
     };
