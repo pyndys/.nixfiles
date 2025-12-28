@@ -24,9 +24,6 @@
 
     autoEnable = true;
 
-    targets = {
-      vencord.enable = false;
-      zen-browser.profileNames = ["pyndys"];
-    };
+    targets.zen-browser.profileNames = ["pyndys"];
   };
 }
