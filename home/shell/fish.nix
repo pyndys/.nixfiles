@@ -4,6 +4,9 @@
     shellAliases = {
       cat = "bat";
       du = "dust";
+      find = "fd";
+      grep = "rg";
+      top = "btm";
       tree = "eza --tree";
     };
     interactiveShellInit = ''
@@ -13,6 +16,7 @@
 
   home.packages = with pkgs.fishPlugins; [
     autopair
+    done
     sponge
     git-abbr
   ];
