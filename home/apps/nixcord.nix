@@ -9,7 +9,9 @@
     config = {
       plugins = {
         anonymiseFileNames.enable = true;
+        betterUploadButton.enable = true;
         ClearURLs.enable = true;
+        gameActivityToggle.enable = true;
         messageLoggerEnhanced.enable = true;
         noTypingAnimation.enable = true;
         snowfall = {
