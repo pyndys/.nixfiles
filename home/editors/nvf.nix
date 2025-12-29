@@ -11,6 +11,7 @@
       git.gitsigns.enable = true;
       statusline.lualine.enable = true;
       dashboard.alpha.enable = true;
+      presence.neocord.enable = true;
 
       filetree.nvimTree = {
         enable = true;

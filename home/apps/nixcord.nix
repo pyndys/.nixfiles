@@ -10,10 +10,7 @@
       plugins = {
         anonymiseFileNames.enable = true;
         ClearURLs.enable = true;
-        messageLogger = {
-          enable = true;
-          ignoreSelf = true;
-        };
+        messageLoggerEnhanced.enable = true;
         noTypingAnimation.enable = true;
         snowfall = {
           enable = true;
@@ -21,6 +18,7 @@
           typeOfSnow = "solid";
         };
         spotifyActivityToggle.enable = true;
+        viewRawVariant.enable = true;
         whoReacted.enable = true;
       };
     };
