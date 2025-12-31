@@ -13,7 +13,6 @@
     dust
     nix-melt
     microfetch
-    codeberg-cli
     nur.repos.zerozawa.mikusays
 
     ## Dev
