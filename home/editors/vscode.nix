@@ -8,30 +8,30 @@
         pkief.material-icon-theme
 
         ## Nix
-        kamadorueda.alejandra
         jnoortheen.nix-ide
+        kamadorueda.alejandra
 
         ## Go
         golang.go
 
         ## Python
-        ms-python.python
         charliermarsh.ruff
+        ms-python.python
       ];
       userSettings = {
         ## UI
-        "workbench.iconTheme" = "material-icon-theme";
         "editor.fontFamily" = "'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace, 'Symbols Nerd Font Mono'";
+        "workbench.iconTheme" = "material-icon-theme";
         "workbench.startupEditor" = "none";
 
         ## Git
-        "git.openRepositoryInParentFolders" = "always";
         "git.confirmSync" = false;
         "git.enableSmartCommit" = true;
+        "git.openRepositoryInParentFolders" = "always";
 
         ## Other settings
-        "files.autoSave" = "on";
         "editor.formatOnSave" = true;
+        "files.autoSave" = "on";
       };
     };
   };

@@ -2,8 +2,8 @@
   programs.steam = {
     enable = true;
     extraCompatPackages = with pkgs.nur.repos.mio; [
-      proton-ge-custom
       proton-cachyos_x86_64_v3
+      proton-ge-custom
     ];
   };
 
@@ -17,8 +17,8 @@
   };
 
   environment.systemPackages = with pkgs; [
-    prismlauncher
-    osu-lazer-bin # appimage ver with online score
     heroic
+    osu-lazer-bin # appimage ver with online score
+    prismlauncher
   ];
 }

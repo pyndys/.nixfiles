@@ -8,13 +8,12 @@
     equibop.enable = true;
     config = {
       plugins = {
+        ClearURLs.enable = true;
         anonymiseFileNames.enable = true;
         betterUploadButton.enable = true;
-        ClearURLs.enable = true;
         gameActivityToggle.enable = true;
         messageLoggerEnhanced.enable = true;
         noTypingAnimation.enable = true;
-        readAllNotificationsButton.enable = true;
         snowfall = {
           enable = true;
           maxSize = 5.0;

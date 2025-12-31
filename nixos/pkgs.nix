@@ -11,11 +11,11 @@
   # Unfree
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (lib.getName pkg) [
-      "nvidia-x11"
       "nvidia-settings"
-      "steam-unwrapped"
-      "steam"
+      "nvidia-x11"
       "osu-lazer"
       "osu-lazer-bin"
+      "steam"
+      "steam-unwrapped"
     ];
 }

@@ -12,15 +12,16 @@
       name = "pyndys";
       isDefault = true;
       extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
-        ublock-origin
-        privacy-badger
-        sponsorblock
-        decentraleyes
-        return-youtube-dislikes
-        darkreader
         bitwarden
-        material-icons-for-github
+        darkreader
+        decentraleyes
         istilldontcareaboutcookies
+        material-icons-for-github
+        privacy-badger
+        return-youtube-dislikes
+        sponsorblock
+        startpage-private-search
+        ublock-origin
       ];
       settings = {
         "network.trr.mode" = 2;

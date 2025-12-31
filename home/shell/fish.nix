@@ -17,7 +17,7 @@
   home.packages = with pkgs.fishPlugins; [
     autopair
     done
-    sponge
     git-abbr
+    sponge
   ];
 }
