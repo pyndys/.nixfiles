@@ -14,11 +14,6 @@
         gameActivityToggle.enable = true;
         messageLoggerEnhanced.enable = true;
         noTypingAnimation.enable = true;
-        snowfall = {
-          enable = true;
-          maxSize = 5.0;
-          typeOfSnow = "solid";
-        };
         spotifyActivityToggle.enable = true;
         steamStatusSync = {
           enable = true;
