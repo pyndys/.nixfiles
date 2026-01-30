@@ -2,11 +2,12 @@
   services.scx = {
     enable = true;
     package = pkgs.scx.rustscheds;
-    scheduler = "scx_bpfland";
+    scheduler = "scx_cosmos";
     extraArgs = [
-      "-m"
-      "performance"
-      "-w"
+      "-c"
+      "0"
+      "-p"
+      "0"
     ];
   };
 }

@@ -1,25 +1,14 @@
 {pkgs, ...}: {
   services = {
-    displayManager.sddm = {
-      enable = true;
-      wayland = {
-        enable = true;
-        compositor = "kwin";
-      };
-    };
+    displayManager.ly.enable = true;
     desktopManager.plasma6.enable = true;
   };
 
-  programs.kdeconnect.enable = true;
-
   environment = {
     plasma6.excludePackages = with pkgs.kdePackages; [
-      kate
+      elisa
       konsole
-    ];
-
-    systemPackages = with pkgs; [
-      haruna
+      discover
     ];
   };
 }

@@ -5,7 +5,6 @@
 }: {
   # System packages
   environment.systemPackages = with pkgs; [
-    f2fs-tools # for f2fs
   ];
 
   # Unfree

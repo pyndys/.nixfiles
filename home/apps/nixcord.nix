@@ -9,6 +9,7 @@
     config = {
       plugins = {
         ClearURLs.enable = true;
+        anammox.enable = true;
         anonymiseFileNames.enable = true;
         betterUploadButton.enable = true;
         gameActivityToggle.enable = true;

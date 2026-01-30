@@ -1,8 +1,7 @@
 {
   imports = [
-    ./amnezia.nix
+    ./clash.nix
     ./hosts.nix
     ./networking.nix
-    #  ./searx.nix
   ];
 }

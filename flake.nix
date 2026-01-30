@@ -14,7 +14,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+    hosts = {
+      url = "github:StevenBlack/hosts";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     nixcord = {
       url = "github:kaylorben/nixcord";
@@ -52,6 +55,7 @@
     nixpkgs,
     home-manager,
     nur,
+    hosts,
     ...
   }: let
     system = "x86_64-linux";
@@ -62,6 +66,7 @@
       modules = [
         ./nixos/configuration.nix
         nur.modules.nixos.default
+        hosts.nixosModule
       ];
     };
     homeConfigurations.pyndys = home-manager.lib.homeManagerConfiguration {

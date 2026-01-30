@@ -13,6 +13,7 @@
       isDefault = true;
       extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
         bitwarden
+        clearurls
         darkreader
         decentraleyes
         istilldontcareaboutcookies
@@ -20,7 +21,6 @@
         privacy-badger
         return-youtube-dislikes
         sponsorblock
-        startpage-private-search
         ublock-origin
       ];
       settings = {

@@ -4,7 +4,7 @@
   users.users.pyndys = {
     isNormalUser = true;
     description = "pyndys";
-    extraGroups = ["networkmanager" "wheel" "input"];
+    extraGroups = ["networkmanager" "wheel" "input" "gamemode"];
     shell = pkgs.fish;
   };
 }
