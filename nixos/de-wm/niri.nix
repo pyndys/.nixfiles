@@ -1,5 +1,5 @@
 {
-  programs.amnezia-vpn = {
+  programs.niri = {
     enable = true;
   };
 }

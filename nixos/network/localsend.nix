@@ -1,5 +1,5 @@
 {
-  programs.git = {
+  programs.localsend = {
     enable = true;
   };
 }

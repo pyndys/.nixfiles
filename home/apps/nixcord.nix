@@ -7,6 +7,7 @@
     discord.enable = false;
     equibop.enable = true;
     config = {
+      autoUpdate = true;
       plugins = {
         ClearURLs.enable = true;
         anammox.enable = true;

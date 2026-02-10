@@ -16,6 +16,7 @@ in {
       aiBandBlocker
       hidePodcasts
       shuffle
+      simpleBeautifulLyrics
     ];
   };
 }

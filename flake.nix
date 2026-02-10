@@ -14,13 +14,28 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hosts = {
-      url = "github:StevenBlack/hosts";
+    aagl = {
+      url = "github:ezKEa/aagl-gtk-on-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    millennium = {
+      url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    niri = {
+      url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nixcord = {
       url = "github:kaylorben/nixcord";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -42,6 +57,11 @@
       };
     };
 
+    zapret-discord-youtube = {
+      url = "github:kartavkun/zapret-discord-youtube";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs = {
@@ -55,7 +75,6 @@
     nixpkgs,
     home-manager,
     nur,
-    hosts,
     ...
   }: let
     system = "x86_64-linux";
@@ -66,7 +85,6 @@
       modules = [
         ./nixos/configuration.nix
         nur.modules.nixos.default
-        hosts.nixosModule
       ];
     };
     homeConfigurations.pyndys = home-manager.lib.homeManagerConfiguration {

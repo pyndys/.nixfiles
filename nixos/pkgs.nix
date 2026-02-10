@@ -5,6 +5,7 @@
 }: {
   # System packages
   environment.systemPackages = with pkgs; [
+    xwayland-satellite
   ];
 
   # Unfree

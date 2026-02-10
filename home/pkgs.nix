@@ -5,18 +5,17 @@
 }: {
   home.packages = with pkgs; [
     ## Some apps
-    haruna
-    logseq
-    adwsteamgtk
     materialgram
-    transmission_4-qt6
 
     ## CLI pkgs
+    gh
     wget
     dust
+    nitch
+    conceal
     nix-melt
-    pfetch-rs
     microfetch
+    speedtest-go
     nur.repos.zerozawa.mikusays
 
     ## Dev

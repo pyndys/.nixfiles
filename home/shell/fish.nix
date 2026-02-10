@@ -8,6 +8,7 @@
       grep = "rg";
       top = "btm";
       tree = "eza --tree";
+      rm = "cnc"; ## Move to trash with conceal
     };
     interactiveShellInit = ''
       set -U fish_greeting ""

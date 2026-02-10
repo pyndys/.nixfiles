@@ -1,6 +1,6 @@
 {
   imports = [
-    ./de-wm/plasma.nix
+    ./de-wm
     ./hardware
     ./network
     ./software
@@ -14,6 +14,10 @@
       experimental-features = ["nix-command" "flakes"];
       trusted-users = ["root" "pyndys"];
       warn-dirty = false;
+
+      ## For Anime Game Launchers
+      substituters = ["https://ezkea.cachix.org"];
+      trusted-public-keys = ["ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI="];
     };
 
     optimise = {

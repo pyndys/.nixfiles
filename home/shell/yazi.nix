@@ -1,5 +1,5 @@
 {
-  programs.onlyoffice = {
+  programs.yazi = {
     enable = true;
   };
 }
