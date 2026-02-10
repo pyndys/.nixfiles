@@ -2,7 +2,7 @@
 
 |env     | attribute                    |
 |--------|------------------------------|
-|de | plasma |
+|de | niri + noctalia |
 |shell | fish |
 |terminal| foot/alacritty/kitty |
 |editor | helix/nvf(nvim) |
