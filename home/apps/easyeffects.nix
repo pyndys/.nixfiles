@@ -1,5 +1,5 @@
 {
-  programs.git = {
+  services.easyeffects = {
     enable = true;
   };
 }

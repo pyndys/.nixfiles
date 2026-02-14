@@ -54,12 +54,12 @@
       ## Key bindings
       binds = with config.lib.niri.actions; {
         "Mod+Q".action.spawn = "alacritty";
-        "Mod+W".action.spawn = "zen";
+        "Mod+W".action.spawn = "zen-beta";
         "Mod+E".action.spawn = ["alacritty" "-e" "yazi"];
         "Mod+D".action.spawn = ["noctalia-shell" "ipc" "call" "launcher" "toggle"];
 
-        "Mod+S".action.screenshot = {show-pointer = false;};
-        "Mod+Shift+S".action.screenshot-screen = {show-pointer = false;};
+        "Print".action.screenshot = {show-pointer = false;};
+        "Mod+Print".action.screenshot-screen = {show-pointer = false;};
         "Mod+C".action = close-window;
         "Mod+Space".action = toggle-window-floating;
         "Mod+F".action = maximize-window-to-edges;
@@ -67,6 +67,9 @@
 
         "Mod+WheelScrollDown".action = focus-workspace-down;
         "Mod+WheelScrollUp".action = focus-workspace-up;
+
+        "XF86AudioRaiseVolume".action.spawn = ["wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"];
+        "XF86AudioLowerVolume".action.spawn = ["wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"];
 
         "Mod+Left".action = focus-column-left;
         "Mod+Right".action = focus-column-right;

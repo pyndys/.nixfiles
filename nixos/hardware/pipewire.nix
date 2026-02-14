@@ -1,31 +1,13 @@
 {
-  security.rtkit.enable = true;
+  services.pulseaudio.enable = false; # Use Pipewire, the modern sound subsystem
+
+  security.rtkit.enable = true; # Enable RealtimeKit for audio purposes
+
   services.pipewire = {
     enable = true;
-    jack.enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
     pulse.enable = true;
-
-    extraConfig.pipewire."92-low-latency" = {
-      "context.properties" = {
-        "default.clock.rate" = 48000;
-        "default.clock.quantum" = 128;
-        "default.clock.min-quantum" = 128;
-        "default.clock.max-quantum" = 128;
-      };
-    };
-    alsa = {
-      enable = true;
-      support32Bit = true;
-    };
-
-    wireplumber.extraConfig = {
-      "10-disable-camera" = {
-        "wireplumber.profiles" = {
-          main = {
-            "monitor.libcamera" = "disabled";
-          };
-        };
-      };
-    };
+    jack.enable = true;
   };
 }
