@@ -5,6 +5,7 @@
 }: {
   home.packages = with pkgs; [
     ## Some apps
+    nautilus
     materialgram
 
     ## CLI pkgs
@@ -25,10 +26,4 @@
     python313
     android-tools
   ];
-
-  ## Unfree
-  nixpkgs.config.allowUnfreePredicate = pkg:
-    builtins.elem (lib.getName pkg) [
-      "spotify"
-    ];
 }

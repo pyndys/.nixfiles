@@ -4,24 +4,27 @@
   pkgs,
   ...
 }: {
-  imports = [
-    inputs.niri.homeModules.niri
+  imports = with inputs.niri.homeModules; [
+    niri
+    stylix
   ];
 
   programs.niri = {
     enable = true;
     package = pkgs.niri;
     settings = {
-      ## Monitor
-      outputs."DP-1" = {
-        enable = true;
-        mode = {
-          height = 1080;
-          width = 1920;
-          refresh = 119.999;
+      ## Monitors
+      outputs = {
+        "HDMI-A-1" = {
+          enable = true;
+          mode = {
+            height = 1080;
+            width = 1920;
+            refresh = 119.999;
+          };
+          scale = 1.0;
+          variable-refresh-rate = true;
         };
-        scale = 1.0;
-        variable-refresh-rate = true;
       };
 
       ## Keyboard
@@ -55,7 +58,7 @@
       binds = with config.lib.niri.actions; {
         "Mod+Q".action.spawn = "alacritty";
         "Mod+W".action.spawn = "zen-beta";
-        "Mod+E".action.spawn = ["alacritty" "-e" "yazi"];
+        "Mod+E".action.spawn = ["nautilus"];
         "Mod+D".action.spawn = ["noctalia-shell" "ipc" "call" "launcher" "toggle"];
 
         "Print".action.screenshot = {show-pointer = false;};
@@ -81,6 +84,7 @@
 
       ## Autostart
       spawn-at-startup = [
+        {command = ["noctalia-shell"];}
         {argv = ["materialgram"];}
         {argv = ["equibop" "-m"];}
       ];

@@ -7,15 +7,11 @@
     inputs.aagl.nixosModules.default
   ];
 
-  ## Millennium - steam customization
-  nixpkgs.overlays = [
-    inputs.millennium.overlays.default
-  ];
-
   programs = {
     steam = {
       enable = true;
-      package = pkgs.millennium-steam;
+      remotePlay.openFirewall = true;
+      dedicatedServer.openFirewall = true;
       extraCompatPackages = with pkgs.nur.repos.mio; [
         proton-cachyos_x86_64_v3
         proton-ge-custom

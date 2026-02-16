@@ -9,7 +9,6 @@
     ./ripgrep.nix
     ./skim.nix
     ./starship.nix
-    ./yazi.nix
     ./zoxide.nix
   ];
 }

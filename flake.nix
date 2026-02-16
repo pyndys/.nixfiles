@@ -19,11 +19,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    millennium = {
-      url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -50,7 +45,7 @@
     };
 
     stylix = {
-      url = "github:nix-community/stylix";
+      url = "github:make-42/stylix/matugen"; # Fork with matugen
       inputs = {
         nixpkgs.follows = "nixpkgs";
         nur.follows = "nur";
@@ -76,23 +71,25 @@
     home-manager,
     nur,
     ...
-  }: let
-    system = "x86_64-linux";
-  in {
+  }: {
     nixosConfigurations.cv01 = nixpkgs.lib.nixosSystem {
-      inherit system;
+      system = "x86_64-linux";
       specialArgs = {inherit inputs;};
       modules = [
         ./nixos/configuration.nix
         nur.modules.nixos.default
-      ];
-    };
-    homeConfigurations.pyndys = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
-      extraSpecialArgs = {inherit inputs;};
-      modules = [
-        ./home/home.nix
-        nur.modules.homeManager.default
+        home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            extraSpecialArgs = {inherit inputs;};
+            users.pyndys = import ./home/home.nix;
+            sharedModules = [
+              nur.modules.homeManager.default
+            ];
+          };
+        }
       ];
     };
   };

@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   programs.fish = {
     enable = true;
+    package = pkgs.fishMinimal;
     shellAliases = {
       cat = "bat";
       du = "dust";
@@ -10,6 +11,7 @@
       tree = "eza --tree";
       rm = "cnc"; ## Move to trash with conceal
     };
+
     interactiveShellInit = ''
       set -U fish_greeting ""
     '';
@@ -19,6 +21,7 @@
     autopair
     done
     git-abbr
+    puffer
     sponge
   ];
 }

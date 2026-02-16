@@ -11,14 +11,41 @@
     enableReleaseChecks = false;
 
     image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/m9/wallhaven-m9q6e9.jpg";
-      hash = "sha256-5tYUMASHV9Wsu2MpbhdsFXKtm+NP2hz074N4o9Xu0xE=";
+      url = "https://w.wallhaven.cc/full/vp/wallhaven-vppdjm.jpg";
+      hash = "sha256-QtAf5YWTXrAVbHXva4MipKlpBgi8cl8bEiyK72+fzoI=";
     };
-    polarity = "dark";
+
+    colorGeneration = {
+      polarity = "dark";
+      scheme = "content";
+      #lightness.dark = 0.02;
+    };
 
     fonts = {
-      sansSerif.name = "Adwaita Sans";
-      monospace.name = "JetBrainsMono Nerd Font";
+      sansSerif = {
+        name = "Adwaita Sans";
+        package = pkgs.adwaita-fonts;
+      };
+      monospace = {
+        name = "JetBrainsMono Nerd Font";
+        package = pkgs.nerd-fonts.jetbrains-mono;
+      };
+      emoji = {
+        name = "Noto Color Emoji";
+        package = pkgs.noto-fonts-color-emoji;
+      };
+    };
+
+    cursor = {
+      name = "Bibata-Modern-Classic";
+      package = pkgs.bibata-cursors;
+      size = 24;
+    };
+
+    icons = {
+      enable = true;
+      dark = "Colloid";
+      package = pkgs.colloid-icon-theme;
     };
 
     autoEnable = true;

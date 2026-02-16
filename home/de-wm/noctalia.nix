@@ -5,10 +5,9 @@
 
   programs.noctalia-shell = {
     enable = true;
-    systemd.enable = true;
     settings = {
       bar = {
-        barType = "Framed";
+        barType = "framed";
         widgets = {
           left = [
             {
@@ -61,6 +60,10 @@
         }
       ];
       dock.enabled = false;
+      sessionMenu = {
+        countdownDuration = 5000;
+        largeButtonsStyle = false;
+      };
     };
   };
 }

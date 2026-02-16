@@ -51,6 +51,7 @@
         "906c6915-5677-48ff-9bfc-096a02a72379" # Floating Status Bar
         "253a3a74-0cc4-47b7-8b82-996a64f030d5" # Floating History
         "f50841b2-5e4a-4534-985d-b7f7b96088c2" # NoHighlightSplit
+        "5941aefd-67b0-453d-9b62-9071a31cbb0d" # Smaller Compact Mode
         "81fcd6b3-f014-4796-988f-6c3cb3874db8" # Zen Context Menu
       ];
 
@@ -63,4 +64,6 @@
       };
     };
   };
+
+  stylix.targets.zen-browser.profileNames = ["pyndys"];
 }

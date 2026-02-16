@@ -6,16 +6,13 @@
     enable = true;
 
     settings.vim = {
-      globals.mapleader = "alt";
       autopairs.nvim-autopairs.enable = true;
       git.gitsigns.enable = true;
       statusline.lualine.enable = true;
-      dashboard.alpha.enable = true;
       presence.neocord.enable = true;
 
       filetree.nvimTree = {
         enable = true;
-        mappings.toggle = "b";
         openOnSetup = false;
         setupOpts = {
           git.enable = true;

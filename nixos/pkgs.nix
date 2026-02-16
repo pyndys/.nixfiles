@@ -6,7 +6,6 @@
   # System packages
   environment.systemPackages = with pkgs; [
     xwayland-satellite
-    home-manager
   ];
 
   # Unfree
@@ -16,6 +15,7 @@
       "nvidia-x11"
       "osu-lazer"
       "osu-lazer-bin"
+      "spotify"
       "steam"
       "steam-unwrapped"
     ];
