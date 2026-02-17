@@ -42,24 +42,13 @@
 
       ## Windows
       prefer-no-csd = true;
-      window-rules = [
-        {
-          geometry-corner-radius = {
-            top-left = 8.0;
-            top-right = 8.0;
-            bottom-left = 8.0;
-            bottom-right = 8.0;
-          };
-          clip-to-geometry = true;
-        }
-      ];
 
       ## Key bindings
       binds = with config.lib.niri.actions; {
         "Mod+Q".action.spawn = "alacritty";
         "Mod+W".action.spawn = "zen-beta";
-        "Mod+E".action.spawn = ["nautilus"];
-        "Mod+D".action.spawn = ["noctalia-shell" "ipc" "call" "launcher" "toggle"];
+        "Mod+E".action.spawn = "nautilus";
+        "Mod+D".action.spawn = ["dms" "ipc" "spotlight" "toggle"];
 
         "Print".action.screenshot = {show-pointer = false;};
         "Mod+Print".action.screenshot-screen = {show-pointer = false;};
@@ -71,9 +60,6 @@
         "Mod+WheelScrollDown".action = focus-workspace-down;
         "Mod+WheelScrollUp".action = focus-workspace-up;
 
-        "XF86AudioRaiseVolume".action.spawn = ["wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"];
-        "XF86AudioLowerVolume".action.spawn = ["wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"];
-
         "Mod+Left".action = focus-column-left;
         "Mod+Right".action = focus-column-right;
         "Mod+Up".action = focus-window-up;
@@ -84,19 +70,8 @@
 
       ## Autostart
       spawn-at-startup = [
-        {command = ["noctalia-shell"];}
         {argv = ["materialgram"];}
         {argv = ["equibop" "-m"];}
-      ];
-
-      ## For Noctalia overview
-      layer-rules = [
-        {
-          matches = [
-            {namespace = "^noctalia-overview.*";}
-          ];
-          place-within-backdrop = true;
-        }
       ];
     };
   };

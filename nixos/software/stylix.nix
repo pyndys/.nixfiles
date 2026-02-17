@@ -11,13 +11,14 @@
     enableReleaseChecks = false;
 
     image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/vp/wallhaven-vppdjm.jpg";
-      hash = "sha256-QtAf5YWTXrAVbHXva4MipKlpBgi8cl8bEiyK72+fzoI=";
+      url = "https://w.wallhaven.cc/full/gp/wallhaven-gpdjk3.jpg";
+      hash = "sha256-BI6KYyU0KX6N1n82Ss3ySCXFiTphaQBz91+EQs1ZKrU=";
     };
 
     colorGeneration = {
       polarity = "dark";
-      scheme = "content";
+      #scheme = "content";
+      lightness.dark = 0.02;
     };
 
     fonts = {

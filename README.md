@@ -2,7 +2,7 @@
 
 |env     | attribute                    |
 |--------|------------------------------|
-|de | niri + noctalia |
+|de | niri + dms |
 |shell | fish |
 |terminal| foot/alacritty/kitty |
 |editor | helix/nvf(nvim) |

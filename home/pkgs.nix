@@ -1,8 +1,4 @@
-{
-  pkgs,
-  lib,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     ## Some apps
     nautilus
@@ -10,6 +6,7 @@
 
     ## CLI pkgs
     gh
+    rbw
     wget
     dust
     nitch
@@ -17,7 +14,6 @@
     nix-melt
     microfetch
     speedtest-go
-    bitwarden-cli
     nur.repos.zerozawa.mikusays
 
     ## Dev

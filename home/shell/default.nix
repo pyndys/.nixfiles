@@ -1,7 +1,6 @@
 {
   imports = [
     ./bat.nix
-    ./bottom.nix
     ./eza.nix
     ./fd.nix
     ./fish.nix

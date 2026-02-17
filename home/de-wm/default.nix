@@ -1,6 +1,6 @@
 {
   imports = [
+    ./dms.nix
     ./niri.nix
-    ./noctalia.nix
   ];
 }
