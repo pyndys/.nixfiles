@@ -18,13 +18,12 @@
     colorGeneration = {
       polarity = "dark";
       scheme = "content";
-      #lightness.dark = 0.02;
     };
 
     fonts = {
       sansSerif = {
-        name = "Adwaita Sans";
-        package = pkgs.adwaita-fonts;
+        name = "Google Sans";
+        package = pkgs.google-fonts;
       };
       monospace = {
         name = "JetBrainsMono Nerd Font";
