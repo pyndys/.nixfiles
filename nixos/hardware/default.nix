@@ -4,6 +4,5 @@
     ./fstrim.nix
     ./pipewire.nix
     ./nvidia.nix
-    ./udev-rules.nix
   ];
 }

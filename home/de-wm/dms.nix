@@ -34,9 +34,8 @@
           persistHistoryOnFile = true;
         };
       };
-      dankBitwarden = {
+      dankKDEConnect = {
         enable = true;
-        settings.trigger = "bw";
       };
       emojiLauncher = {
         enable = true;

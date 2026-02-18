@@ -1,8 +1,7 @@
-{pkgs, ...}: {
+{
   imports = [
     ./apps
     ./de-wm
-    ./editors
     ./shell
     ./pkgs.nix
   ];
@@ -15,5 +14,6 @@
       EDITOR = "nvim";
       CONCEAL_FINDER = "skim";
     };
+    shell.enableFishIntegration = true; # Fish everywhere!!!
   };
 }

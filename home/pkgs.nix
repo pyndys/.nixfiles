@@ -6,10 +6,8 @@
 
     ## CLI pkgs
     gh
-    rbw
     wget
     dust
-    nitch
     conceal
     nix-melt
     microfetch

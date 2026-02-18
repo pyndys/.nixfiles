@@ -1,7 +1,6 @@
 {
   programs.skim = {
     enable = true;
-    enableFishIntegration = true;
-    defaultOptions = ["--color=16"];
+    defaultOptions = ["--color" "16"];
   };
 }

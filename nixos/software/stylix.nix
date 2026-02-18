@@ -11,8 +11,8 @@
     enableReleaseChecks = false;
 
     image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/gp/wallhaven-gpdjk3.jpg";
-      hash = "sha256-BI6KYyU0KX6N1n82Ss3ySCXFiTphaQBz91+EQs1ZKrU=";
+      url = "https://w.wallhaven.cc/full/po/wallhaven-po8ow9.png";
+      hash = "sha256-ZaC+TDyycm3ByxCff9XTTpBu323ptCSbC07g/rf7p04=";
     };
 
     colorGeneration = {

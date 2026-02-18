@@ -4,8 +4,8 @@
 |--------|------------------------------|
 |de | niri + dms |
 |shell | fish |
-|terminal| foot/alacritty/kitty |
-|editor | helix/nvf(nvim) |
+|terminal| foot |
+|editor | nvf(nvim) |
 
 and others...
 
