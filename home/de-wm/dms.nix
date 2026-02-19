@@ -34,9 +34,7 @@
           persistHistoryOnFile = true;
         };
       };
-      dankKDEConnect = {
-        enable = true;
-      };
+      dankKDEConnect.enable = true;
       emojiLauncher = {
         enable = true;
         settings.noTrigger = true;

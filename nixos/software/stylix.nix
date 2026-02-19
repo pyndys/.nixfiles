@@ -26,9 +26,13 @@
         name = "Google Sans";
         package = pkgs.google-fonts;
       };
+      serif = {
+        name = "Google Sans";
+        package = pkgs.google-fonts;
+      };
       monospace = {
-        name = "JetBrainsMono Nerd Font";
-        package = pkgs.nerd-fonts.jetbrains-mono;
+        name = "GeistMono Nerd Font";
+        package = pkgs.nerd-fonts.geist-mono;
       };
       emoji = {
         name = "Noto Color Emoji";

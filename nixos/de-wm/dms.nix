@@ -1,5 +1,9 @@
-{
-  programs.dms-shell = {
+{inputs, ...}: {
+  imports = [
+    inputs.dms.nixosModules.dank-material-shell
+  ];
+
+  programs.dank-material-shell = {
     enable = true;
   };
 

@@ -14,6 +14,8 @@ in {
     enabledExtensions = with spicePkgs.extensions; [
       adblockify
       aiBandBlocker
+      fullAlbumDate
+      fullScreen
       hidePodcasts
       shuffle
       simpleBeautifulLyrics

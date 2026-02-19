@@ -3,12 +3,17 @@
   pkgs,
   ...
 }: {
-  # System packages
+  ## System packages
   environment.systemPackages = with pkgs; [
+    ## For niri
     xwayland-satellite
+
+    ## Basic pkgs
+    wget
+    git
   ];
 
-  # Unfree
+  ## Unfree
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (lib.getName pkg) [
       "nvidia-settings"

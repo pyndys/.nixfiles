@@ -6,7 +6,6 @@
 
     ## CLI pkgs
     gh
-    wget
     dust
     conceal
     nix-melt
@@ -16,7 +15,6 @@
 
     ## Dev
     go
-    git
     python313
     android-tools
   ];
