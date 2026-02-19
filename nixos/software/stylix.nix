@@ -17,22 +17,26 @@
 
     colorGeneration = {
       polarity = "dark";
-      #scheme = "content";
-      lightness.dark = 0.02;
+      lightness = {
+        dark = 0.0;
+        light = 0.0;
+      };
+      contrast = 0.0;
+      scheme = "vibrant";
     };
 
     fonts = {
       sansSerif = {
-        name = "Google Sans";
-        package = pkgs.google-fonts;
+        name = "Adwaita Sans";
+        package = pkgs.adwaita-fonts;
       };
       serif = {
-        name = "Google Sans";
-        package = pkgs.google-fonts;
+        name = "Adwaita Sans";
+        package = pkgs.adwaita-fonts;
       };
       monospace = {
-        name = "GeistMono Nerd Font";
-        package = pkgs.nerd-fonts.geist-mono;
+        name = "JetBrainsMono Nerd Font";
+        package = pkgs.nerd-fonts.jetbrains-mono;
       };
       emoji = {
         name = "Noto Color Emoji";
@@ -48,8 +52,8 @@
 
     icons = {
       enable = true;
-      dark = "Colloid";
-      package = pkgs.colloid-icon-theme;
+      dark = "MoreWaita";
+      package = pkgs.morewaita-icon-theme;
     };
 
     autoEnable = true;

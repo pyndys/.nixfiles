@@ -16,7 +16,10 @@
 
     aagl = {
       url = "github:ezKEa/aagl-gtk-on-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        rust-overlay.inputs.nixpkgs.follows = "nixpkgs";
+      };
     };
 
     disko = {
@@ -64,6 +67,7 @@
       inputs = {
         nixpkgs.follows = "nixpkgs";
         nur.follows = "nur";
+        matugen.inputs.nixpkgs.follows = "nixpkgs";
       };
     };
 
