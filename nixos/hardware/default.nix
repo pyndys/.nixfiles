@@ -2,10 +2,8 @@
   imports = [
     ./disko.nix
     ./fstrim.nix
+    ./hardware-configuration.nix
     ./pipewire.nix
     ./nvidia.nix
   ];
-
-  ## Facter autodetect
-  hardware.facter.reportPath = ./facter.json;
 }
