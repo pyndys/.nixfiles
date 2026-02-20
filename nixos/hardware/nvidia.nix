@@ -13,8 +13,8 @@
         finegrained = false;
       };
       open = true;
-      nvidiaSettings = false;
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
+      nvidiaSettings = false; # GUI nvidia settings on wayland sucks
+      package = config.boot.kernelPackages.nvidiaPackages.stable; # Latest good but it breaks sometimes
     };
   };
 }

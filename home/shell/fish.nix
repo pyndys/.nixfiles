@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   programs.fish = {
     enable = true;
-    package = pkgs.fishMinimal;
     shellAliases = {
       cat = "bat";
       du = "dust";
@@ -12,16 +11,16 @@
       rm = "cnc"; # Move to trash with conceal
     };
 
+    ## Disable greeting
     interactiveShellInit = ''
-      set -U fish_greeting ""
+      set -U fish_greeting
     '';
   };
 
   home.packages = with pkgs.fishPlugins; [
     autopair
-    done
     git-abbr
-    puffer
-    sponge
+    puffer # Bash-like
+    sponge # Manage fish history
   ];
 }

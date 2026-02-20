@@ -1,4 +1,4 @@
-## Если кратко, то это hosts файл без api.github.com (потому что оно ломает обновление flake inputs)
+## Disable api.github.com because it can break flake inputs update
 {pkgs, ...}: {
   networking.extraHosts = builtins.readFile (
     pkgs.runCommand "filtered-hosts" {} ''

@@ -13,7 +13,6 @@
     settings = {
       experimental-features = ["nix-command" "flakes"];
       trusted-users = ["root" "pyndys"];
-      warn-dirty = false;
 
       ## For Anime Game Launchers
       substituters = ["https://ezkea.cachix.org"];
