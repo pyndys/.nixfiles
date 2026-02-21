@@ -2,6 +2,7 @@
   imports = [
     inputs.disko.nixosModules.disko
   ];
+
   disko.devices.disk.main = {
     type = "disk";
     device = "/dev/nvme0n1";
@@ -15,7 +16,7 @@
             type = "filesystem";
             format = "vfat";
             mountpoint = "/boot";
-            mountOptions = ["umask=0077"];
+            mountOptions = ["umask=0077"]; # Restrict /boot access to root only
           };
         };
         root = {
@@ -24,6 +25,7 @@
             type = "filesystem";
             format = "ext4";
             mountpoint = "/";
+            mountOptions = ["noatime" "commit=60"];
           };
         };
       };
