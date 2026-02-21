@@ -12,6 +12,7 @@
     nix-melt
     microfetch
     speedtest-go
+    bitwarden-cli
     nur.repos.zerozawa.mikusays
 
     ## Dev
