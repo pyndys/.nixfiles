@@ -7,15 +7,9 @@
     inputs.aagl.nixosModules.default
   ];
 
-  ## Steam customization
-  nixpkgs.overlays = [
-    inputs.millennium.overlays.default
-  ];
-
   programs = {
     steam = {
       enable = true;
-      package = pkgs.millennium-steam;
       extraCompatPackages = with pkgs.nur.repos.mio; [
         proton-cachyos_x86_64_v3
         proton-ge-custom
@@ -36,6 +30,6 @@
 
   environment.systemPackages = with pkgs; [
     heroic
-    osu-lazer-bin # appimage ver with online score
+    osu-lazer-bin # Appimage ver with online score
   ];
 }
