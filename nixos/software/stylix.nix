@@ -17,12 +17,7 @@
 
     colorGeneration = {
       polarity = "dark";
-      lightness = {
-        dark = 0.0;
-        light = 0.0;
-      };
-      contrast = 0.0;
-      scheme = "vibrant";
+      scheme = "tonal-spot";
     };
 
     fonts = {

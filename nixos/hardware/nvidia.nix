@@ -13,8 +13,8 @@
         finegrained = false;
       };
       open = true;
-      nvidiaSettings = false; # GUI nvidia settings on wayland sucks
-      package = config.boot.kernelPackages.nvidiaPackages.stable; # Latest good but it breaks sometimes
+      nvidiaSettings = false; # nvidia-smi is enough
+      package = config.boot.kernelPackages.nvidiaPackages.stable; # stable > latest: latest occasionally breaks
     };
   };
 }
