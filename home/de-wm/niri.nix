@@ -67,6 +67,7 @@
 
         "Mod+Tab".action = toggle-overview;
       };
+      hotkey-overlay.skip-at-startup = true; # Skip screen with bindings
 
       ## Autostart
       spawn-at-startup = [
