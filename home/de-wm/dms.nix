@@ -1,8 +1,4 @@
-{
-  inputs,
-  config,
-  ...
-}: {
+{inputs, ...}: {
   imports = with inputs; [
     dms.homeModules.dank-material-shell
     dms.homeModules.niri
