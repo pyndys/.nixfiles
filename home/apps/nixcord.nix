@@ -14,9 +14,11 @@
         anonymiseFileNames.enable = true;
         betterUploadButton.enable = true;
         gameActivityToggle.enable = true;
+        fixSpotifyEmbeds.enable = true;
         messageLoggerEnhanced.enable = true;
         noTypingAnimation.enable = true;
         spotifyActivityToggle.enable = true;
+        spotifyCrack.enable = true;
         steamStatusSync = {
           enable = true;
           goInvisibleIfActivityIsHidden = true;
