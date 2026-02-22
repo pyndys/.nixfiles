@@ -47,7 +47,7 @@
       binds = with config.lib.niri.actions; {
         "Mod+Q".action.spawn = "foot";
         "Mod+W".action.spawn = "zen-beta";
-        "Mod+E".action.spawn = "nautilus";
+        "Mod+E".action.spawn = "pcmanfm";
         "Mod+D".action.spawn = ["dms" "ipc" "spotlight" "toggle"];
 
         "Print".action.screenshot = {show-pointer = false;};
