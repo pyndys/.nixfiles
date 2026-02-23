@@ -14,14 +14,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    aagl = {
-      url = "github:ezKEa/aagl-gtk-on-nix";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        rust-overlay.inputs.nixpkgs.follows = "nixpkgs";
-      };
-    };
-
     disko = {
       url = "github:nix-community/disko/latest";
       inputs.nixpkgs.follows = "nixpkgs";

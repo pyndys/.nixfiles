@@ -1,12 +1,4 @@
-{
-  inputs,
-  pkgs,
-  ...
-}: {
-  imports = [
-    inputs.aagl.nixosModules.default
-  ];
-
+{pkgs, ...}: {
   programs = {
     steam = {
       enable = true;
@@ -24,8 +16,6 @@
         renice = 10;
       };
     };
-
-    sleepy-launcher.enable = true;
   };
 
   environment.systemPackages = with pkgs; [

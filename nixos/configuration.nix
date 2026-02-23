@@ -13,10 +13,6 @@
     settings = {
       experimental-features = ["nix-command" "flakes"];
       trusted-users = ["root" "pyndys"];
-
-      ## For Anime Game Launchers
-      substituters = ["https://ezkea.cachix.org"];
-      trusted-public-keys = ["ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI="];
     };
 
     optimise = {
