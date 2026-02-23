@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     inputs.nvf.homeManagerModules.default
   ];
@@ -26,6 +30,7 @@
       fzf-lua = {
         enable = true;
         profile = "skim";
+        setupOpts.fzf_bin = "${pkgs.skim}/bin/sk";
       };
 
       clipboard = {
