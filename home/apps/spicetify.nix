@@ -15,7 +15,6 @@ in {
       adblockify
       aiBandBlocker
       fullAlbumDate
-      fullScreen
       hidePodcasts
       shuffle
       simpleBeautifulLyrics
