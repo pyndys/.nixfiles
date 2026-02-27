@@ -17,9 +17,4 @@
       };
     };
   };
-
-  environment.systemPackages = with pkgs; [
-    heroic
-    osu-lazer-bin # Appimage ver with online score
-  ];
 }
