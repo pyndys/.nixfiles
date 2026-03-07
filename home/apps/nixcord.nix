@@ -12,10 +12,15 @@
         ClearURLs.enable = true;
         anammox.enable = true;
         anonymiseFileNames.enable = true;
+        betterFolders = {
+          enable = true;
+          closeAllFolders = true;
+          closeAllHomeButton = true;
+          closeOthers = true;
+        };
         betterUploadButton.enable = true;
         callTimer.enable = true;
         gameActivityToggle.enable = true;
-        fixSpotifyEmbeds.enable = true;
         messageLoggerEnhanced.enable = true;
         noTypingAnimation.enable = true;
         silentTyping.enable = true;
