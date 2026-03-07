@@ -12,7 +12,6 @@
     settings.vim = {
       autopairs.nvim-autopairs.enable = true;
       git.gitsigns.enable = true;
-      statusline.lualine.enable = true;
       presence.neocord.enable = true;
 
       filetree.nvimTree = {
@@ -31,6 +30,18 @@
         enable = true;
         profile = "skim";
         setupOpts.fzf_bin = "${pkgs.skim}/bin/sk";
+      };
+
+      statusline.lualine = {
+        enable = true;
+        activeSection = {
+          a = [''{ "mode" } ''];
+          b = [''{ "filename" } ''];
+          c = [''{ "diff" } ''];
+          x = [''{ "filetype" } ''];
+          y = [''{ "progress" } ''];
+          z = [''{ "hostname" } ''];
+        };
       };
 
       clipboard = {
