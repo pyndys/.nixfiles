@@ -50,11 +50,10 @@
     };
 
     stylix = {
-      url = "github:make-42/stylix/matugen"; # Fork with matugen
+      url = "github:nix-community/stylix";
       inputs = {
         nixpkgs.follows = "nixpkgs";
         nur.follows = "nur";
-        matugen.inputs.nixpkgs.follows = "nixpkgs";
       };
     };
 

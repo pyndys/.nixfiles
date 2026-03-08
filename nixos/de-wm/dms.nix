@@ -8,7 +8,7 @@
 
     enableSystemMonitoring = true;
     enableVPN = false;
-    enableDynamicTheming = true;
+    enableDynamicTheming = false;
     enableAudioWavelength = true;
     enableCalendarEvents = false;
   };

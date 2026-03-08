@@ -10,15 +10,8 @@
     enable = true;
     enableReleaseChecks = false;
 
-    image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/po/wallhaven-po8ow9.png";
-      hash = "sha256-ZaC+TDyycm3ByxCff9XTTpBu323ptCSbC07g/rf7p04=";
-    };
-
-    colorGeneration = {
-      polarity = "dark";
-      scheme = "tonal-spot";
-    };
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+    polarity = "dark";
 
     fonts = {
       sansSerif = {

@@ -18,9 +18,46 @@
 
     enableSystemMonitoring = true;
     enableVPN = false;
-    enableDynamicTheming = true;
+    enableDynamicTheming = false;
     enableAudioWavelength = true;
     enableCalendarEvents = false;
+
+    settings = {
+      blurredWallpaperLayer = true;
+      showWeather = false;
+      launcherLogoMode = "os";
+      barConfigs = [
+        {
+          id = "default";
+          name = "Main Bar";
+          enabled = true;
+          leftWidgets = [
+            "launcherButton"
+            "workspaceSwitcher"
+            "focusedWindow"
+          ];
+          centerWidgets = [
+            "music"
+            "clock"
+            "dankKDEConnect"
+          ];
+          rightWidgets = [
+            "systemTray"
+            "capsLockIndicator"
+            "notificationButton"
+            "clipboard"
+            "keyboard_layout_name"
+            "cpuUsage"
+            "controlCenterButton"
+          ];
+          spacing = 0;
+          squareCorners = true;
+          gothCornersEnabled = true;
+          openOnOverview = true;
+        }
+      ];
+      weatherEnabled = false;
+    };
 
     plugins = {
       calculator = {

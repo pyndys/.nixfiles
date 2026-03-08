@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     ## Some apps
-    fractal
     materialgram
+    nur.repos.forkprince.fluxer-bin
 
     ## CLI pkgs
     gh
