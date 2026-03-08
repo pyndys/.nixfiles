@@ -30,6 +30,41 @@
     settings = {
       blurredWallpaperLayer = true; # wallpaper in overview
       launcherLogoMode = "os"; # NixOS logo
+
+      controlCenterWidgets = [
+        {
+          id = "volumeSlider";
+          enabled = true;
+          width = 50;
+        }
+        {
+          id = "diskUsage";
+          enabled = true;
+          width = 25;
+          mountPath = "/";
+        }
+        {
+          id = "darkMode";
+          enabled = true;
+          width = 25;
+        }
+        {
+          id = "audioInput";
+          enabled = true;
+          width = 25;
+        }
+        {
+          id = "audioOutput";
+          enabled = true;
+          width = 25;
+        }
+        {
+          id = "wifi";
+          enabled = true;
+          width = 50;
+        }
+      ];
+
       barConfigs = [
         {
           id = "default";
