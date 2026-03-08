@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = with inputs; [
     dms.homeModules.dank-material-shell
     dms.homeModules.niri
@@ -16,6 +20,7 @@
       restartIfChanged = true;
     };
 
+    ## Dependecies for dms
     enableSystemMonitoring = true;
     enableVPN = false;
     enableDynamicTheming = false;
@@ -23,9 +28,8 @@
     enableCalendarEvents = false;
 
     settings = {
-      blurredWallpaperLayer = true;
-      showWeather = false;
-      launcherLogoMode = "os";
+      blurredWallpaperLayer = true; # wallpaper in overview
+      launcherLogoMode = "os"; # NixOS logo
       barConfigs = [
         {
           id = "default";
@@ -59,7 +63,26 @@
       weatherEnabled = false;
     };
 
+    session = {
+      ## Remove garbage from launcher
+      hiddenApps = [
+        "kvantummanager"
+        "footclient"
+        "foot-server"
+        "qt5ct"
+        "qt6ct"
+        "ca.andyholmes.Valent"
+      ];
+
+      ## Nord wallpaper
+      wallpaperPath = pkgs.fetchurl {
+        url = "https://github.com/ChrisTitusTech/nord-background/blob/main/ign_unsplash15.png?raw=true";
+        hash = "sha256-McpnOvPQUnI2HDZnIn2UebGftY+aMyHB/l2CYY9r/V8=";
+      };
+    };
+
     plugins = {
+      ## Calculator
       calculator = {
         enable = true;
         settings = {
@@ -67,7 +90,11 @@
           persistHistoryOnFile = true;
         };
       };
+
+      ## Phone Connect with Valent
       dankKDEConnect.enable = true;
+
+      ## Emoji
       emojiLauncher = {
         enable = true;
         settings.noTrigger = true;

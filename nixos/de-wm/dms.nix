@@ -6,6 +6,7 @@
   programs.dank-material-shell = {
     enable = true;
 
+    ## Dependencies for dms
     enableSystemMonitoring = true;
     enableVPN = false;
     enableDynamicTheming = false;
