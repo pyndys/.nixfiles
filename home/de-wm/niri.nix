@@ -13,20 +13,6 @@
     enable = true;
     package = pkgs.niri;
     settings = {
-      ## Monitors
-      outputs = {
-        "HDMI-A-1" = {
-          enable = true;
-          mode = {
-            height = 1080;
-            width = 1920;
-            refresh = 119.999;
-          };
-          scale = 1.0;
-          variable-refresh-rate = true;
-        };
-      };
-
       ## Keyboard
       input.keyboard.xkb = {
         layout = "us,ru";
