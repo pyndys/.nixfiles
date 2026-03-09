@@ -1,5 +1,6 @@
 {
   imports = [
+    ./amnezia.nix
     ./hosts.nix
     ./networking.nix
     ./throne.nix
