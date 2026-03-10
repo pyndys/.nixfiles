@@ -107,6 +107,8 @@
         "qt5ct"
         "qt6ct"
         "ca.andyholmes.Valent"
+        "lf"
+        "nvim"
       ];
 
       ## Nord wallpaper
