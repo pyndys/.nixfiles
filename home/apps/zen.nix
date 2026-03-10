@@ -43,6 +43,7 @@
         return-youtube-dislikes
         sponsorblock
         ublock-origin
+        youtube-enhancer-vc
       ];
 
       mods = [
