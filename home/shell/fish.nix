@@ -9,6 +9,7 @@
       top = "btm";
       tree = "eza --tree";
       rm = "cnc"; # Move to trash with conceal
+      py = "python";
     };
 
     ## Disable greeting
