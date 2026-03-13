@@ -36,8 +36,7 @@
         bitwarden
         clearurls
         darkreader
-        decentraleyes
-        istilldontcareaboutcookies
+        localcdn
         material-icons-for-github
         privacy-badger
         return-youtube-dislikes
