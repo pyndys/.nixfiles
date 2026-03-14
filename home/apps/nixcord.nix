@@ -10,7 +10,6 @@
       autoUpdate = true;
       plugins = {
         ClearURLs.enable = true;
-        anammox.enable = true;
         anonymiseFileNames.enable = true;
         betterFolders = {
           enable = true;
@@ -20,6 +19,7 @@
         };
         betterUploadButton.enable = true;
         callTimer.enable = true;
+        declutter.enable = true;
         gameActivityToggle.enable = true;
         messageLoggerEnhanced.enable = true;
         noTypingAnimation.enable = true;
