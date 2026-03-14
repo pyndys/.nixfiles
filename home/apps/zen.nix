@@ -38,7 +38,6 @@
         darkreader
         localcdn
         material-icons-for-github
-        privacy-badger
         return-youtube-dislikes
         sponsorblock
         ublock-origin
