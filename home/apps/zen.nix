@@ -37,11 +37,9 @@
         clearurls
         darkreader
         localcdn
-        material-icons-for-github
         return-youtube-dislikes
         sponsorblock
         ublock-origin
-        youtube-enhancer-vc
       ];
 
       mods = [
