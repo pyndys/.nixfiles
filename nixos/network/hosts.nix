@@ -2,7 +2,7 @@
   networking = {
     stevenblack = {
       enable = true;
-      block = ["fakenews" "gambling" "social"];
+      block = ["fakenews" "gambling" "porn"];
     };
     ## Disable api.github.com because it can break flake inputs update
     extraHosts = builtins.readFile (
