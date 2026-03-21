@@ -12,6 +12,7 @@
         proton-cachyos_x86_64_v3
         proton-ge-custom
       ];
+      fontPackages = with pkgs; [liberation_ttf];
     };
 
     gamemode = {
