@@ -1,13 +1,21 @@
-{inputs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     inputs.nixcord.homeModules.nixcord
   ];
   programs.nixcord = {
     enable = true;
-    discord.enable = false;
-    equibop.enable = true;
+    discord = {
+      vencord.enable = false;
+      equicord = {
+        enable = true;
+        package = pkgs.nur.repos.forkprince.equicord;
+      };
+    };
     config = {
-      autoUpdate = true;
       plugins = {
         ClearURLs.enable = true;
         anonymiseFileNames.enable = true;
