@@ -30,6 +30,7 @@
     settings = {
       blurredWallpaperLayer = true; # wallpaper in overview
       launcherLogoMode = "os"; # NixOS logo
+      appLauncherGridColumns = 6;
 
       controlCenterWidgets = [
         {

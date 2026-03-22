@@ -40,8 +40,8 @@
 
     icons = {
       enable = true;
-      dark = "MoreWaita";
-      package = pkgs.morewaita-icon-theme;
+      dark = "Colloid";
+      package = pkgs.colloid-icon-theme;
     };
 
     autoEnable = true;
