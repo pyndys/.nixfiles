@@ -1,6 +1,6 @@
 {
   imports = [
-    ./ghostty.nix
+    ./alacritty.nix
     ./nixcord.nix
     ./prismlauncher.nix
     ./spicetify.nix

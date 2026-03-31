@@ -31,9 +31,9 @@
 
       ## Key bindings
       binds = with config.lib.niri.actions; {
-        "Mod+Q".action.spawn = "ghostty";
+        "Mod+Q".action.spawn = "alacritty";
         "Mod+W".action.spawn = "zen-beta";
-        "Mod+E".action.spawn = ["ghostty" "-e" "lf"];
+        "Mod+E".action.spawn = ["alacritty" "-e" "lf"];
         "Mod+D".action.spawn = ["dms" "ipc" "spotlight" "toggle"];
 
         "Print".action.screenshot = {show-pointer = false;};
