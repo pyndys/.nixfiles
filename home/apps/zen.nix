@@ -34,6 +34,7 @@
       isDefault = true;
       extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
         bitwarden
+        chrome-mask
         clearurls
         darkreader
         localcdn

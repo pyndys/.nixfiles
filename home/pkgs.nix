@@ -3,7 +3,6 @@
     ## Some apps
     fractal
     materialgram
-    nur.repos.forkprince.fluxer-bin
 
     ## CLI pkgs
     gh
