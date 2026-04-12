@@ -31,9 +31,9 @@
 
       ## Key bindings
       binds = with config.lib.niri.actions; {
-        "Mod+Q".action.spawn = "alacritty";
+        "Mod+Q".action.spawn = "foot";
         "Mod+W".action.spawn = "zen-beta";
-        "Mod+E".action.spawn = ["alacritty" "-e" "lf"];
+        "Mod+E".action.spawn = ["foot" "-e" "lf"];
         "Mod+D".action.spawn = ["dms" "ipc" "spotlight" "toggle"];
 
         "Print".action.screenshot = {show-pointer = false;};
@@ -58,7 +58,6 @@
       ## Autostart
       spawn-at-startup = [
         {argv = ["materialgram"];}
-        {argv = ["equibop" "-m"];}
         {command = ["valent" "--gapplication-service"];}
       ];
     };

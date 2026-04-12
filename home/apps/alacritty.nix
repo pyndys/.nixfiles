@@ -1,5 +1,5 @@
 {
-  programs.alacritty = {
+  programs.foot = {
     enable = true;
   };
 }
