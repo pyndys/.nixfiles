@@ -5,5 +5,6 @@
     ./ly.nix
     ./sched-ext.nix
     ./sudo-rs.nix
+    ./zram.nix
   ];
 }

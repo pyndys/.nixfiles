@@ -110,12 +110,13 @@
         "ca.andyholmes.Valent"
         "lf"
         "nvim"
+        "org.gnome.Loupe"
       ];
 
       ## Nord wallpaper
       wallpaperPath = pkgs.fetchurl {
-        url = "https://github.com/ChrisTitusTech/nord-background/blob/main/ign_unsplash15.png?raw=true";
-        hash = "sha256-McpnOvPQUnI2HDZnIn2UebGftY+aMyHB/l2CYY9r/V8=";
+        url = "https://raw.githubusercontent.com/AngelJumbo/gruvbox-wallpapers/refs/heads/main/wallpapers/anime/grey_lain_wallpaper.jpg";
+        hash = "sha256-cpchCwacmo1jriJx/CkAH/avqGXN80Cx6ABivpsGipY=";
       };
     };
 

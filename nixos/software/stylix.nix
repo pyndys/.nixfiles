@@ -9,8 +9,7 @@
   stylix = {
     enable = true;
     enableReleaseChecks = false;
-
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/nord.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
     polarity = "dark";
 
     fonts = {
@@ -33,8 +32,8 @@
     };
 
     cursor = {
-      name = "Bibata-Modern-Classic";
-      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Gruvbox-Dark";
+      package = pkgs.nur.repos.adam0.bibata-modern-cursors-gruvbox-dark;
       size = 24;
     };
 

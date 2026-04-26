@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     ## Some apps
     loupe
+    fractal
     nautilus
     materialgram
 

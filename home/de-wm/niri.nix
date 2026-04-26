@@ -21,8 +21,8 @@
 
       ## Cursor
       cursor = {
-        theme = "Bibata-Modern-Classic";
-        size = 24;
+        theme = config.stylix.cursor.name;
+        size = config.stylix.cursor.size;
         hide-when-typing = true;
       };
 
