@@ -32,8 +32,8 @@
     };
 
     cursor = {
-      name = "Bibata-Modern-Gruvbox-Dark";
-      package = pkgs.nur.repos.adam0.bibata-modern-cursors-gruvbox-dark;
+      name = "Bibata-Modern-Classic";
+      package = pkgs.bibata-cursors;
       size = 24;
     };
 
