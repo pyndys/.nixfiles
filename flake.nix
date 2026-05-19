@@ -29,10 +29,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    millennium = {
-      url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    ggf.url = "github:pyndys/ggf";
 
     niri = {
       url = "github:sodiboo/niri-flake";

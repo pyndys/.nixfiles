@@ -4,6 +4,7 @@
   ];
   services.zapret-discord-youtube = {
     enable = true;
-    configName = "general(ALT9)";
+    configName = "general (FAKE_TLS_AUTO_ALT3)";
+    gameFilter = "all";
   };
 }

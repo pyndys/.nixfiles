@@ -32,8 +32,6 @@
         messageLoggerEnhanced.enable = true;
         noTypingAnimation.enable = true;
         silentTyping.enable = true;
-        spotifyActivityToggle.enable = true;
-        spotifyCrack.enable = true;
         viewRawVariant.enable = true;
         volumeBooster.enable = true;
         whoReacted.enable = true;

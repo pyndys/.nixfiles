@@ -2,8 +2,8 @@
   home.packages = with pkgs; [
     ## Some apps
     loupe
-    fractal
     nautilus
+    pear-desktop
     materialgram
 
     ## CLI pkgs
@@ -11,7 +11,6 @@
     dust
     conceal
     nix-melt
-    microfetch
     speedtest-go
     bitwarden-cli
     nur.repos.zerozawa.mikusays
