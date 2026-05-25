@@ -53,7 +53,6 @@
 
       settings = {
         "network.trr.mode" = 2;
-        "network.trr.uri" = "https://dns.quad9.net/dns-query";
         "zen.view.compact.enable-at-startup" = true;
         "zen.tabs.vertical.right-side" = true;
         "zen.welcome-screen.seen" = true;
