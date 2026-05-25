@@ -138,6 +138,14 @@
         enable = true;
         settings.noTrigger = true;
       };
+
+      nixPackageRunner = {
+        enable = true;
+        settings = {
+          terminal = "foot";
+          execFlag = "-e";
+        };
+      };
     };
   };
 }
