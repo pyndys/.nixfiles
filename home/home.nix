@@ -12,7 +12,6 @@
     stateVersion = "25.05";
     sessionVariables = {
       EDITOR = "nvim";
-      CONCEAL_FINDER = "skim";
       NIXOS_OZONE_WL = "1";
     };
     shell.enableFishIntegration = true; # Fish everywhere!!!

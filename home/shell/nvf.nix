@@ -28,8 +28,6 @@
 
       fzf-lua = {
         enable = true;
-        profile = "skim";
-        setupOpts.fzf_bin = "${pkgs.skim}/bin/sk";
       };
 
       statusline.lualine = {
@@ -46,7 +44,10 @@
 
       clipboard = {
         enable = true;
-        providers.wl-copy.enable = true;
+        providers.wl-copy = {
+          enable = true;
+          package = pkgs.wl-clipboard-rs;
+        };
       };
 
       lsp = {
