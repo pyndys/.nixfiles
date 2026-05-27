@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   home.packages = with pkgs; [
     ## Some apps
     loupe
@@ -14,6 +18,7 @@
     speedtest-go
     bitwarden-cli
     nur.repos.zerozawa.mikusays
+    inputs.ggf.packages.${system}.default
 
     ## Dev
     go

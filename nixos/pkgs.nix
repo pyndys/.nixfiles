@@ -1,6 +1,5 @@
 {
   lib,
-  inputs,
   pkgs,
   ...
 }: {
@@ -12,8 +11,6 @@
     ## Basic pkgs
     wget
     git
-
-    inputs.ggf.packages.${system}.default
   ];
 
   ## Unfree
