@@ -10,6 +10,7 @@
     ./nvf.nix
     ./ripgrep.nix
     ./starship.nix
+    ./ttyper.nix
     ./zoxide.nix
   ];
 }
