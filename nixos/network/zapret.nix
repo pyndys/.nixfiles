@@ -1,10 +1,10 @@
 {inputs, ...}: {
   imports = [
-    inputs.zapret-discord-youtube.nixosModules.default
+    inputs.zapret-discord-youtube.nixosModules.withTestTools
   ];
   services.zapret-discord-youtube = {
     enable = true;
-    configName = "general (FAKE_TLS_AUTO_ALT3)";
+    configName = "general(ALT9)";
     gameFilter = "all";
   };
 }
