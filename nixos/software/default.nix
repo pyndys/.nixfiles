@@ -1,6 +1,7 @@
 {
   imports = [
-    ./gaming.nix
+    ./gamemode.nix
+    ./steam.nix
     ./stylix.nix
   ];
 }

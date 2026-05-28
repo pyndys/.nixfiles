@@ -9,6 +9,7 @@
     nautilus
     pear-desktop
     materialgram
+    osu-lazer-bin
 
     ## CLI pkgs
     gh
