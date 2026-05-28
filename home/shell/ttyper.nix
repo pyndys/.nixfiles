@@ -1,0 +1,5 @@
+{
+  programs.ttyper = {
+    enable = true;
+  };
+}
