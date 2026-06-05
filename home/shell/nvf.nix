@@ -14,6 +14,13 @@
       git.gitsigns.enable = true;
       presence.neocord.enable = true;
 
+      ## Colors from terminal
+      theme = {
+        enable = true;
+        transparent = true;
+      };
+      options.termguicolors = false;
+
       filetree.nvimTree = {
         enable = true;
         openOnSetup = false;
