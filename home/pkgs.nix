@@ -7,6 +7,7 @@
     ## CLI pkgs
     gh
     dust
+    paru
     conceal
     nix-melt
     speedtest-go
