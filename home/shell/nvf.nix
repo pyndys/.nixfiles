@@ -39,6 +39,7 @@
 
       statusline.lualine = {
         enable = true;
+        theme = "16color";
         activeSection = {
           a = [''{ "mode" } ''];
           b = [''{ "filename" } ''];
