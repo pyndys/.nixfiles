@@ -9,6 +9,7 @@
     ./nvf.nix
     ./ripgrep.nix
     ./skim.nix
+    ./ssh.nix
     ./starship.nix
     ./zoxide.nix
   ];
