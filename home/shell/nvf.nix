@@ -35,6 +35,8 @@
 
       fzf-lua = {
         enable = true;
+        profile = "skim";
+        setupOpts.fzf_bin = "${pkgs.skim}/bin/sk";
       };
 
       statusline.lualine = {
