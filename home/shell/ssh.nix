@@ -7,6 +7,10 @@
         identityFile = "~/.ssh/aur";
         user = "aur";
       };
+      "github.com" = {
+        identityFile = "~/.ssh/github";
+        user = "git";
+      };
     };
   };
 }

@@ -5,7 +5,6 @@
 }: {
   home.packages = with pkgs; [
     ## CLI pkgs
-    gh
     dust
     paru
     conceal
