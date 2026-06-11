@@ -9,6 +9,7 @@
     paru
     conceal
     nix-melt
+    onefetch
     speedtest-go
     nur.repos.zerozawa.mikusays
     inputs.ggf.packages.${system}.default
