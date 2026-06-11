@@ -12,7 +12,7 @@
     onefetch
     speedtest-go
     nur.repos.zerozawa.mikusays
-    inputs.ggf.packages.${system}.default
+    inputs.ggf.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     ## Dev
     go
