@@ -5,7 +5,6 @@
     ./fd.nix
     ./fish.nix
     ./git.nix
-    ./lf.nix
     ./nh.nix
     ./nvf.nix
     ./ripgrep.nix
