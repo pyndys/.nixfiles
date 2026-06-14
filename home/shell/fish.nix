@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   programs.fish = {
     enable = true;
+    package = pkgs.fishMinimal;
     shellAliases = {
       cat = "bat";
       du = "dust";
@@ -23,7 +24,6 @@
   home.packages = with pkgs.fishPlugins; [
     autopair
     git-abbr
-    puffer # Bash-like
     sponge # Manage fish history
   ];
 }
