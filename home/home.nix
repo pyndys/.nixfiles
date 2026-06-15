@@ -3,6 +3,7 @@
     ./age.nix
     ./shell
     ./pkgs.nix
+    ./tg-ws-proxy.nix
   ];
 
   home = {
