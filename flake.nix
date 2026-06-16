@@ -9,11 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     agenix = {
       url = "github:ryantm/agenix";
       inputs = {
@@ -40,14 +35,12 @@
   outputs = inputs @ {
     nixpkgs,
     home-manager,
-    nur,
     ...
   }: {
     homeConfigurations."pyndys" = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       extraSpecialArgs = {inherit inputs;};
       modules = [
-        nur.modules.homeManager.default
         ./home/home.nix
       ];
     };
