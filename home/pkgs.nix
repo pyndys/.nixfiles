@@ -8,7 +8,6 @@
     dust
     conceal
     nix-melt
-    nix-tree
     speedtest-go
     inputs.ggf.packages.${pkgs.stdenv.hostPlatform.system}.default
 

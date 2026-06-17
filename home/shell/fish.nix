@@ -6,7 +6,6 @@
       cat = "bat";
       du = "dust";
       find = "fd";
-      grep = "rg";
       tree = "eza --tree";
       rm = "cnc"; # Move to trash with conceal
       py = "python";

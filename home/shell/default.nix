@@ -7,7 +7,6 @@
     ./git.nix
     ./nh.nix
     ./nvf.nix
-    ./ripgrep.nix
     ./skim.nix
     ./ssh.nix
     ./starship.nix
