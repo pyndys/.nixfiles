@@ -10,8 +10,6 @@
       tree = "eza --tree";
       rm = "cnc"; # Move to trash with conceal
       py = "python";
-      yay = "paru"; # For Arch only!!!
-      nyay = "paru"; # Nyarch reference
     };
 
     ## Disable greeting
