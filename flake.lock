@@ -91,11 +91,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781541204,
-        "narHash": "sha256-ZFTJlyTtsHNedT2DLdTYWI71fY+vK+XuGHevuT1rm28=",
+        "lastModified": 1781809233,
+        "narHash": "sha256-mzEOPz35CoGcIYIqMGwcpVnwy2kK+0soDUC9Hvf3xeg=",
         "owner": "pyndys",
         "repo": "ggf",
-        "rev": "b09b2f4efb0d70cbd7528567756d6a10ad5d6e08",
+        "rev": "f942642814bb1735b24aadd557ad1fb15c400e40",
         "type": "github"
       },
       "original": {
@@ -111,11 +111,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781711298,
-        "narHash": "sha256-/lyUJK9dwG16FGlL6Yz+yMmHhRSWCXiyzjvaohIrwbw=",
+        "lastModified": 1781810163,
+        "narHash": "sha256-dk8lIk0UnO8GD3e7e3HM1vSYXpbEDmhy67w7KztfdCg=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "fa4e2f7e101c2a656bdd910e49ae485bd2d8a358",
+        "rev": "c8f0b8ed441c95bfeaf33555e7631044bb09f384",
         "type": "github"
       },
       "original": {
@@ -177,6 +177,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1768564909,
+        "narHash": "sha256-Kell/SpJYVkHWMvnhqJz/8DqQg2b6PguxVWOuadbHCc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nvf": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -202,6 +218,25 @@
         "type": "github"
       }
     },
+    "osufetch": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2",
+        "systems": "systems_3"
+      },
+      "locked": {
+        "lastModified": 1768760578,
+        "narHash": "sha256-5ggsUa90npMXPE+Y06G2slhlOcxkma/1ivMfXehphGY=",
+        "ref": "refs/heads/main",
+        "rev": "7535e3601dbe2f2a8206a12b19b8f01e109172f2",
+        "revCount": 39,
+        "type": "git",
+        "url": "https://codeberg.org/tsuniko/osufetch"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://codeberg.org/tsuniko/osufetch"
+      }
+    },
     "root": {
       "inputs": {
         "agenix": "agenix",
@@ -209,6 +244,7 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nvf": "nvf",
+        "osufetch": "osufetch",
         "tg-ws-proxy": "tg-ws-proxy"
       }
     },
@@ -228,6 +264,21 @@
       }
     },
     "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_3": {
       "locked": {
         "lastModified": 1681028828,
         "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",

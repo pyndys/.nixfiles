@@ -27,6 +27,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    osufetch.url = "git+https://codeberg.org/tsuniko/osufetch";
+
     tg-ws-proxy = {
       url = "github:dmfrpro/tg-ws-proxy-flake";
       inputs.nixpkgs.follows = "nixpkgs";

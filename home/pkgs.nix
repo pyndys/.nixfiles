@@ -10,6 +10,7 @@
     nix-melt
     speedtest-go
     inputs.ggf.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.osufetch.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     ## Dev
     go
