@@ -13,6 +13,6 @@
 
     ## Dev
     go
-    python313
+    python3
   ];
 }
