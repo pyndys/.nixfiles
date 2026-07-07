@@ -14,5 +14,6 @@
     ## Dev
     go
     python3
+    android-tools
   ];
 }

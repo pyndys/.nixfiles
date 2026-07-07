@@ -12,7 +12,6 @@
     settings.vim = {
       autopairs.nvim-autopairs.enable = true;
       git.gitsigns.enable = true;
-      presence.neocord.enable = true;
 
       ## Colors from terminal
       theme = {
