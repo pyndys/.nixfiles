@@ -2,6 +2,7 @@
   programs.fish = {
     enable = true;
     package = pkgs.fishMinimal;
+
     shellAliases = {
       cat = "bat";
       du = "dust";
@@ -10,15 +11,24 @@
       py = "python";
     };
 
+    plugins = [
+      {
+        name = "autopair";
+        src = pkgs.fishPlugins.autopair.src;
+      }
+      {
+        name = "git-abbr";
+        src = pkgs.fishPlugins.git-abbr.src;
+      }
+      {
+        name = "sponge";
+        src = pkgs.fishPlugins.sponge.src;
+      }
+    ];
+
     ## Disable greeting
     interactiveShellInit = ''
       set -U fish_greeting
     '';
   };
-
-  home.packages = with pkgs.fishPlugins; [
-    autopair
-    git-abbr
-    sponge # Manage fish history
-  ];
 }

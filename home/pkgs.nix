@@ -4,7 +4,6 @@
   ...
 }: {
   home.packages = with pkgs; [
-    go
     dust
     conceal
     python3

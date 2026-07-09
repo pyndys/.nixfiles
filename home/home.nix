@@ -1,6 +1,7 @@
 {
   imports = [
     ./age.nix
+    ./go.nix
     ./services
     ./shell
     ./pkgs.nix
