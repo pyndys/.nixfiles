@@ -1,10 +1,9 @@
 {
   imports = [
     ./age.nix
-    ./flatpak.nix
+    ./services
     ./shell
     ./pkgs.nix
-    ./tg-ws-proxy.nix
   ];
 
   home = {
