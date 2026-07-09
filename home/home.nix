@@ -1,6 +1,7 @@
 {
   imports = [
     ./age.nix
+    ./flatpak.nix
     ./shell
     ./pkgs.nix
     ./tg-ws-proxy.nix
