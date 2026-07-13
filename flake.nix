@@ -28,11 +28,6 @@
       url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    tg-ws-proxy = {
-      url = "github:dmfrpro/tg-ws-proxy-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
   outputs = inputs @ {
     nixpkgs,
