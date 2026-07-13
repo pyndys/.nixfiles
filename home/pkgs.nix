@@ -10,20 +10,18 @@
     pear-desktop
     materialgram
     osu-lazer-bin
+    inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     ## CLI pkgs
-    gh
     dust
     conceal
     nix-melt
     speedtest-go
     bitwarden-cli
-    nur.repos.zerozawa.mikusays
-    inputs.ggf.packages.${system}.default
+    inputs.ggf.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     ## Dev
-    go
-    python313
+    python3
     android-tools
   ];
 }

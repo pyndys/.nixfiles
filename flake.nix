@@ -9,9 +9,20 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
+    agenix = {
+      url = "github:ryantm/agenix";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
+    };
+
+    chaotic = {
+      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
     };
 
     disko = {
@@ -19,25 +30,18 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    dms = {
-      url = "github:AvengeMedia/DankMaterialShell/stable";
+    ggf = {
+      url = "github:pyndys/ggf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    dms-plugin-registry = {
-      url = "github:AvengeMedia/dms-plugin-registry";
+    helium = {
+      url = "github:schembriaiden/helium-browser-nix-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ggf.url = "github:pyndys/ggf";
-
-    niri = {
-      url = "github:sodiboo/niri-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    nixcord = {
-      url = "github:kaylorben/nixcord";
+    millennium = {
+      url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -46,42 +50,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    spicetify-nix = {
-      url = "github:Gerg-L/spicetify-nix";
+    proxy-suite = {
+      url = "github:FUFSoB/proxy-suite-flake";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    stylix = {
-      url = "github:nix-community/stylix";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        nur.follows = "nur";
-      };
-    };
-
-    tg-ws-proxy = {
-      url = "github:pialtor/tg-ws-proxy-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    zapret-discord-youtube = {
-      url = "github:kartavkun/zapret-discord-youtube";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        home-manager.follows = "home-manager";
-      };
     };
   };
 
   outputs = inputs @ {
     nixpkgs,
     home-manager,
-    nur,
+    chaotic,
     ...
   }: {
     nixosConfigurations.cv01 = nixpkgs.lib.nixosSystem {
@@ -89,17 +67,14 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./nixos/configuration.nix
-        nur.modules.nixos.default
         home-manager.nixosModules.home-manager
+        chaotic.nixosModules.default
         {
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
             extraSpecialArgs = {inherit inputs;};
             users.pyndys = import ./home/home.nix;
-            sharedModules = [
-              nur.modules.homeManager.default
-            ];
           };
         }
       ];

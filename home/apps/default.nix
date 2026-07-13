@@ -1,8 +1,7 @@
 {
   imports = [
-    ./foot.nix
-    ./nixcord.nix
+    ./ghostty.nix
     ./prismlauncher.nix
-    ./zen.nix
+    ./vesktop.nix
   ];
 }

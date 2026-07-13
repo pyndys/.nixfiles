@@ -4,7 +4,7 @@
 |--------|------------------------------|
 |de | niri + dms |
 |shell | fish |
-|terminal| foot |
+|terminal| ghostty |
 |editor | nvf(nvim) |
 
 and others...

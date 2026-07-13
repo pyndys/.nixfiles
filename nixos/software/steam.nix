@@ -1,7 +1,14 @@
-{pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
+  nixpkgs.overlays = [inputs.millennium.overlays.default];
+
   programs.steam = {
     enable = true;
-    extraCompatPackages = with pkgs.nur.repos.mio; [
+    package = pkgs.millennium-steam;
+    extraCompatPackages = with pkgs; [
       proton-cachyos_x86_64_v3
       proton-ge-custom
     ];

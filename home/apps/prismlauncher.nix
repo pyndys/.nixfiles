@@ -4,7 +4,6 @@
     settings = {
       AutomaticJavaDownload = false;
       AutomaticJavaSwitch = true;
-      EnableFeralGamemode = true;
     };
   };
 }

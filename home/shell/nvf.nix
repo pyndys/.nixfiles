@@ -12,7 +12,13 @@
     settings.vim = {
       autopairs.nvim-autopairs.enable = true;
       git.gitsigns.enable = true;
-      presence.neocord.enable = true;
+
+      ## Colors from terminal
+      theme = {
+        enable = true;
+        transparent = true;
+      };
+      options.termguicolors = false;
 
       filetree.nvimTree = {
         enable = true;
@@ -28,10 +34,13 @@
 
       fzf-lua = {
         enable = true;
+        profile = "skim";
+        setupOpts.fzf_bin = "${pkgs.skim}/bin/sk";
       };
 
       statusline.lualine = {
         enable = true;
+        theme = "16color";
         activeSection = {
           a = [''{ "mode" } ''];
           b = [''{ "filename" } ''];

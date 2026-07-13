@@ -5,9 +5,6 @@
 }: {
   ## System packages
   environment.systemPackages = with pkgs; [
-    ## For niri
-    xwayland-satellite
-
     ## Basic pkgs
     wget
     git

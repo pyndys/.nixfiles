@@ -4,13 +4,12 @@
     ./eza.nix
     ./fd.nix
     ./fish.nix
-    ./fzf.nix
-    ./lf.nix
+    ./git.nix
     ./nh.nix
     ./nvf.nix
-    ./ripgrep.nix
+    ./skim.nix
+    ./ssh.nix
     ./starship.nix
-    ./ttyper.nix
     ./zoxide.nix
   ];
 }

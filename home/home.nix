@@ -1,8 +1,9 @@
 {
   imports = [
     ./apps
-    ./de-wm
     ./shell
+    ./age.nix
+    ./go.nix
     ./pkgs.nix
   ];
 

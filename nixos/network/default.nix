@@ -2,9 +2,7 @@
   imports = [
     ./hosts.nix
     ./networking.nix
-    ./tg-ws-proxy.nix
-    ./throne.nix
+    ./proxy-suite.nix
     ./valent.nix
-    ./zapret.nix
   ];
 }

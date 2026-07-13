@@ -12,6 +12,8 @@
         "╭── "
         "$directory"
         "$git_branch$git_status"
+        "$golang"
+        "$python"
         "$cmd_duration"
         "\n╰─$character"
       ];
@@ -34,12 +36,22 @@
       };
 
       git_branch = {
-        format = "[ $symbol$branch](purple) ";
-        symbol = "  ";
+        format = "[ $symbol$branch](purple)";
+        symbol = " ";
       };
 
       cmd_duration = {
-        format = "[  $duration](yellow) ";
+        format = "[  $duration](yellow)";
+      };
+
+      golang = {
+        format = " [ $symbol($version )]($style)";
+        symbol = "󰟓 ";
+      };
+
+      python = {
+        format = " [ $symbol($version )]($style)";
+        symbol = " ";
       };
     };
   };
