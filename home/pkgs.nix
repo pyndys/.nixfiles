@@ -23,5 +23,10 @@
     ## Dev
     python3
     android-tools
+
+    ## Others
+    zip
+    imagemagick
+    colloid-icon-theme
   ];
 }

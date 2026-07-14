@@ -1,6 +1,7 @@
 {
   imports = [
-    ./ghostty.nix
+    ./equibop
+    ./ghostty
     ./prismlauncher.nix
     ./vesktop.nix
   ];

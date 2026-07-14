@@ -1,5 +1,5 @@
 {
-  programs.ghostty = {
+  programs.equibop = {
     enable = true;
   };
 }

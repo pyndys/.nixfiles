@@ -5,7 +5,7 @@
     systemd = {
       enable = true;
       restartIfChanged = true;
-  };
+    };
 
     ## Dependencies for dms
     enableSystemMonitoring = true;
@@ -16,7 +16,7 @@
     enableClipboardPaste = true;
   };
 
-services.displayManager.dms-greeter = {
+  services.displayManager.dms-greeter = {
     enable = true;
     compositor.name = "niri";
   };
