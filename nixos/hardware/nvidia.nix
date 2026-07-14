@@ -1,4 +1,4 @@
-{config, ...}: {
+{pkgs, ...}: {
   services.xserver.videoDrivers = ["nvidia"];
 
   hardware = {
@@ -14,7 +14,7 @@
       };
       open = true;
       nvidiaSettings = false; # nvidia-smi is enough
-      package = config.boot.kernelPackages.nvidiaPackages.stable; # stable > latest: latest occasionally breaks
+      package = pkgs.nvidia_cachyos;
     };
   };
 }
