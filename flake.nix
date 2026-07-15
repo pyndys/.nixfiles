@@ -46,8 +46,11 @@
     };
 
     nix-osu = {
-      url = "github:pyndys/nix-osu"; # fork https://github.com/yunfachi/nix-osu
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:yunfachi/nix-osu";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        denix.inputs.home-manager.follows = "home-manager";
+      };
     };
 
     nvf = {

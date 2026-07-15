@@ -1,14 +1,14 @@
-{
+{config, ...}: {
   programs.ssh = {
     enable = true;
     enableDefaultConfig = false;
     settings = {
       "aur.archlinux.org" = {
-        identityFile = "~/.ssh/aur";
+        identityFile = config.age.secrets."secrets/ssh/aur".path;
         user = "aur";
       };
       "github.com" = {
-        identityFile = "~/.ssh/github";
+        identityFile = config.age.secrets."secrets/ssh/github".path;
         user = "git";
       };
     };

@@ -9,7 +9,9 @@
   programs.osu = {
     enable = true;
     package = pkgs.osu-lazer-bin;
-    releaseStream = "lazer";
+    releaseStream = "tachyon";
+    extraGameSettings.ShowFirstRunSetup = false;
+    extraFrameworkSettings.FrameSync = "Limit4x";
     settings = {
       input = {
         joystick.enable = false;

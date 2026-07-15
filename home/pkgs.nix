@@ -29,10 +29,4 @@
     imagemagick
     colloid-icon-theme
   ];
-
-  ## Unfree
-  nixpkgs.config.allowUnfreePredicate = pkg:
-    builtins.elem (lib.getName pkg) [
-      "osu-lazer-bin"
-    ];
 }

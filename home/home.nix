@@ -14,6 +14,7 @@
     sessionVariables = {
       EDITOR = "nvim";
       NIXOS_OZONE_WL = "1";
+      CONCEAL_FINDER = "skim";
     };
     shell.enableFishIntegration = true; # Fish everywhere!!!
     enableNixpkgsReleaseCheck = false;
