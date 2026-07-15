@@ -1,6 +1,7 @@
 {
   inputs,
   pkgs,
+  lib,
   ...
 }: {
   home.packages = with pkgs; [
@@ -9,7 +10,6 @@
     nautilus
     pear-desktop
     materialgram
-    osu-lazer-bin
     inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     ## CLI pkgs
@@ -29,4 +29,10 @@
     imagemagick
     colloid-icon-theme
   ];
+
+  ## Unfree
+  nixpkgs.config.allowUnfreePredicate = pkg:
+    builtins.elem (lib.getName pkg) [
+      "osu-lazer-bin"
+    ];
 }

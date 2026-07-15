@@ -1,14 +1,10 @@
 {pkgs, ...}: {
-  services.scx = {
+  services.scx-loader = {
     enable = true;
-    package = pkgs.scx.rustscheds;
-    scheduler = "scx_cosmos";
-    ## Gaming mode for scx_cosmos
-    extraArgs = [
-      "-c"
-      "0"
-      "-p"
-      "0"
-    ];
+    schedsPackages = [pkgs.scx.rustscheds];
+    config = {
+      default_sched = "scx_bpfland";
+      default_mode = "Auto";
+    };
   };
 }
