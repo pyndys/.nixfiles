@@ -2,7 +2,7 @@
   description = "myflake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -42,6 +42,11 @@
 
     millennium = {
       url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    miku-cursor = {
+      url = "github:pyndys/miku-cursor-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

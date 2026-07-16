@@ -1,15 +1,10 @@
-{
-  inputs,
-  pkgs,
-  ...
-}: {
+{inputs, ...}: {
   imports = [
     inputs.nix-osu.homeModules.default
   ];
   programs.osu = {
     enable = true;
-    package = pkgs.osu-lazer-bin;
-    releaseStream = "tachyon";
+    releaseStream = "lazer";
     extraGameSettings.ShowFirstRunSetup = false;
     extraFrameworkSettings.FrameSync = "Limit4x";
     settings = {

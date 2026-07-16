@@ -28,5 +28,6 @@
     zip
     imagemagick
     colloid-icon-theme
+    inputs.miku-cursor.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
