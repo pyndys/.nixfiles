@@ -2,7 +2,6 @@
   imports = [
     ./apps
     ./shell
-    ./age.nix
     ./go.nix
     ./pkgs.nix
   ];

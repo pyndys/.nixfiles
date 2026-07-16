@@ -5,6 +5,7 @@
     ./network
     ./software
     ./system
+    ./age.nix
     ./pkgs.nix
     ./user.nix
   ];

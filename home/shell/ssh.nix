@@ -4,11 +4,11 @@
     enableDefaultConfig = false;
     settings = {
       "aur.archlinux.org" = {
-        identityFile = config.age.secrets."secrets/ssh/aur".path;
+        identityFile = "${config.home.homeDirectory}/.ssh/aur";
         user = "aur";
       };
       "github.com" = {
-        identityFile = config.age.secrets."secrets/ssh/github".path;
+        identityFile = "${config.home.homeDirectory}/.ssh/github";
         user = "git";
       };
     };
