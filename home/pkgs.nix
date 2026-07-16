@@ -1,13 +1,13 @@
 {
   inputs,
   pkgs,
-  lib,
   ...
 }: {
   home.packages = with pkgs; [
     ## Some apps
     loupe
     nautilus
+    parabolic
     pear-desktop
     materialgram
     inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
