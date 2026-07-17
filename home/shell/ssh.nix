@@ -11,6 +11,10 @@
         identityFile = "${config.home.homeDirectory}/.ssh/github";
         user = "git";
       };
+      "codeberg.org" = {
+        identityFile = "${config.home.homeDirectory}/.ssh/codeberg";
+        user = "git";
+      };
     };
   };
 }

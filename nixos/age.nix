@@ -19,6 +19,13 @@
         group = "users";
         mode = "0600";
       };
+      "home/secrets/ssh/codeberg" = {
+        file = ../home/secrets/ssh/codeberg.age;
+        path = "/home/pyndys/.ssh/codeberg";
+        owner = "pyndys";
+        group = "users";
+        mode = "0600";
+      };
       "nixos/secrets/password" = {
         file = ./secrets/password.age;
         owner = "root";
