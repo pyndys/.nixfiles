@@ -9,7 +9,7 @@
     nautilus
     parabolic
     pear-desktop
-    materialgram
+    telegram-desktop
     inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     ## CLI pkgs
