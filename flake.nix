@@ -17,6 +17,11 @@
       };
     };
 
+    areofyl-fetch = {
+      url = "github:areofyl/fetch";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     chaotic = {
       url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
       inputs = {
@@ -27,11 +32,6 @@
 
     disko = {
       url = "github:nix-community/disko/latest";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    ggf = {
-      url = "github:pyndys/ggf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
