@@ -8,7 +8,6 @@
     loupe
     nautilus
     parabolic
-    pear-desktop
     telegram-desktop
     inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
 
