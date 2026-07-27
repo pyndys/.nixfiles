@@ -1,5 +1,0 @@
-{
-  programs.equibop = {
-    enable = true;
-  };
-}

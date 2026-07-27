@@ -6,6 +6,7 @@
   home.packages = with pkgs; [
     ## Some apps
     loupe
+    goofcord
     nautilus
     parabolic
     telegram-desktop
