@@ -38,6 +38,12 @@
         group = "root";
         mode = "0400";
       };
+      "nixos/secrets/searxng" = {
+        file = ./secrets/searxng.age;
+        owner = "root";
+        group = "root";
+        mode = "0400";
+      };
     };
   };
 }

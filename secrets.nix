@@ -6,4 +6,5 @@ in {
   "home/secrets/ssh/codeberg.age".publicKeys = [me];
   "nixos/secrets/password.age".publicKeys = [me];
   "nixos/secrets/tg-ws-proxy.age".publicKeys = [me];
+  "nixos/secrets/searxng.age".publicKeys = [me];
 }
