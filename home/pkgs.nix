@@ -6,9 +6,11 @@
   home.packages = with pkgs; [
     ## Some apps
     loupe
+    dialect
     goofcord
     nautilus
     parabolic
+    mission-center
     telegram-desktop
     inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
 
@@ -26,7 +28,5 @@
     ## Others
     zip
     imagemagick
-    colloid-icon-theme
-    inputs.miku-cursor.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

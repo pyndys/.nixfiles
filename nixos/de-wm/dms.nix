@@ -8,7 +8,7 @@
     };
 
     ## Dependencies for dms
-    enableSystemMonitoring = true;
+    enableSystemMonitoring = false;
     enableVPN = false;
     enableDynamicTheming = true;
     enableAudioWavelength = true;

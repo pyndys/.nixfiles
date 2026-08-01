@@ -19,6 +19,7 @@
     zapret = {
       enable = true;
       configName = "general(ALT9)";
+      gameFilter = "all";
     };
   };
 }

@@ -50,11 +50,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    miku-cursor = {
-      url = "github:pyndys/miku-cursor-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     nix-osu = {
       url = "github:yunfachi/nix-osu";
       inputs = {
