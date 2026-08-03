@@ -25,26 +25,6 @@
         "type": "github"
       }
     },
-    "areofyl-fetch": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1785706441,
-        "narHash": "sha256-5dR1DdrH19mgVmDifnstdmY2U0s7RWBJ13pLEPxpw3s=",
-        "owner": "areofyl",
-        "repo": "fetch",
-        "rev": "160ec8fe4f79a11e2c933f1af33c3352d626941c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "areofyl",
-        "repo": "fetch",
-        "type": "github"
-      }
-    },
     "chaotic": {
       "inputs": {
         "flake-schemas": "flake-schemas",
@@ -609,7 +589,6 @@
     "root": {
       "inputs": {
         "agenix": "agenix",
-        "areofyl-fetch": "areofyl-fetch",
         "chaotic": "chaotic",
         "disko": "disko",
         "helium": "helium",

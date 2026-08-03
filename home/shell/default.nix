@@ -3,7 +3,6 @@
     ./bat.nix
     ./eza.nix
     ./fd.nix
-    ./fetch.nix
     ./fish.nix
     ./git.nix
     ./nh.nix

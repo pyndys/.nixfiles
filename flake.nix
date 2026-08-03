@@ -17,11 +17,6 @@
       };
     };
 
-    areofyl-fetch = {
-      url = "github:areofyl/fetch";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     chaotic = {
       url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
       inputs = {

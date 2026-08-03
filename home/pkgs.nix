@@ -18,6 +18,7 @@
     dust
     conceal
     nix-melt
+    microfetch
     speedtest-go
     bitwarden-cli
 
