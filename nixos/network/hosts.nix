@@ -11,7 +11,7 @@
       sha256 = "sha256-VT3qxwxxla2xXq116jgo6vKpbx5P+hFDwiZc/oOPp0w=";
     });
 
-    ## osu!lazer map downloading fix
+    ## osu!lazer map downloading fix from https://github.com/Flowseal/zapret-discord-youtube/discussions/8819
     hosts."77.223.98.115" = [
       "spectator.osu.ppy.sh"
       "m1.ppy.sh"
