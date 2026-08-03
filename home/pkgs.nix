@@ -10,7 +10,6 @@
     goofcord
     nautilus
     parabolic
-    protonplus
     mission-center
     telegram-desktop
     inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default

@@ -32,16 +32,41 @@
         ]
       },
       "locked": {
-        "lastModified": 1785616883,
-        "narHash": "sha256-soXnS+S9Oa7FyeZsVJ0t8ENn6e2USmuXs+lqyahC5dc=",
+        "lastModified": 1785706441,
+        "narHash": "sha256-5dR1DdrH19mgVmDifnstdmY2U0s7RWBJ13pLEPxpw3s=",
         "owner": "areofyl",
         "repo": "fetch",
-        "rev": "55ee1183aa942777a8ee84fbbd8e9c49cd32bfcf",
+        "rev": "160ec8fe4f79a11e2c933f1af33c3352d626941c",
         "type": "github"
       },
       "original": {
         "owner": "areofyl",
         "repo": "fetch",
+        "type": "github"
+      }
+    },
+    "chaotic": {
+      "inputs": {
+        "flake-schemas": "flake-schemas",
+        "home-manager": [
+          "home-manager"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1785759286,
+        "narHash": "sha256-we9WXmf1wggZXJ6si7ZZC2xQZoBBEw8KGo4csBs39Yg=",
+        "owner": "chaotic-cx",
+        "repo": "nyx",
+        "rev": "c2be267cb07f88f761d04a0a67bda471951b6d6c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "chaotic-cx",
+        "ref": "nyxpkgs-unstable",
+        "repo": "nyx",
         "type": "github"
       }
     },
@@ -171,6 +196,20 @@
         "type": "github"
       }
     },
+    "flake-schemas": {
+      "locked": {
+        "lastModified": 1780327564,
+        "narHash": "sha256-HiRPtA0spK+Dkgbhz/1zW9glXxNVB+L4Rj2VYmdawb8=",
+        "rev": "6cc9bd98891b1fc6bb2b8cb3277df8bc72799ca6",
+        "revCount": 149,
+        "type": "tarball",
+        "url": "https://api.flakehub.com/f/pinned/DeterminateSystems/flake-schemas/0.5.0/019e83cf-9af3-78b1-ac5b-70e68ad1efe1/source.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://flakehub.com/f/DeterminateSystems/flake-schemas/%3D0.5.0.tar.gz"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems_4"
@@ -241,11 +280,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1785554830,
-        "narHash": "sha256-K/YRYz4JT1PYMoRkl30L1rUSsVRSSAqjuE4ZXfYNJ54=",
+        "lastModified": 1785641213,
+        "narHash": "sha256-V9HKF0TynM6AI1sTuClNFIyr0wIwC82zNQymJs7Ldlk=",
         "owner": "schembriaiden",
         "repo": "helium-browser-nix-flake",
-        "rev": "f73c5221c3eac417d7e2f04c7f4e7d08b1c27584",
+        "rev": "141470984a71fb22f1266fca6773d2a4d0991468",
         "type": "github"
       },
       "original": {
@@ -407,11 +446,11 @@
         "systems": "systems_5"
       },
       "locked": {
-        "lastModified": 1785555459,
-        "narHash": "sha256-7z11FXKxBF9L1rlOCjHdD9tmbgP+6kEy0QHGs0F68FE=",
+        "lastModified": 1785641844,
+        "narHash": "sha256-3dJpFsCZ8N4AM1rk+GuYPYElmSTpF0vktuRtNtMmODE=",
         "owner": "yunfachi",
         "repo": "nix-osu",
-        "rev": "55bd637d6004c072553de369ab6c13b09624b810",
+        "rev": "59e411052bc0d103e3a270ae6020b4d227df6126",
         "type": "github"
       },
       "original": {
@@ -469,16 +508,16 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1785606026,
-        "narHash": "sha256-Je9LEkXta68OIxKxp5rVaLHBroevAvttX2Rknby+Jx4=",
+        "lastModified": 1785692966,
+        "narHash": "sha256-vUfIeBEfpbAfZ5zjgIkYk7eHBeVfCYVjLbWnMkseYnk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "94121f787ef407d21d7cbb2885eec3ed8f2f55c2",
+        "rev": "643809054d65fdd466a63e3155b8c498cb483c04",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-unstable-small",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -516,11 +555,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785524545,
-        "narHash": "sha256-ILww3rsO4JA9bY2pV56Pg/VrRADQmIw/alhpM4eUIYY=",
+        "lastModified": 1785632973,
+        "narHash": "sha256-j4NzdhN4dgpvORbKdteIcw8M2WJyKrIgalBxT/CNk+c=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "fbf73761f56c7b41f8095bd1a8fcadefea30a05b",
+        "rev": "c82d4e47cc1baab21d4954760db49941aaa39b49",
         "type": "github"
       },
       "original": {
@@ -537,11 +576,11 @@
         "zapret": "zapret"
       },
       "locked": {
-        "lastModified": 1783749277,
-        "narHash": "sha256-j6g9wLxD0rUj/tZls9SjDh5CarweOOOMXD3EGcBof3s=",
+        "lastModified": 1785752612,
+        "narHash": "sha256-xplyGWMis+MHSOJcwlnOTlebJGNag0qFsZ719JQWsz8=",
         "owner": "FUFSoB",
         "repo": "proxy-suite-flake",
-        "rev": "e54c9463dd2890402f9e3087cc8fef3268f85746",
+        "rev": "47a07d971cf53e62b912d2809a9a711275ceb00d",
         "type": "github"
       },
       "original": {
@@ -571,6 +610,7 @@
       "inputs": {
         "agenix": "agenix",
         "areofyl-fetch": "areofyl-fetch",
+        "chaotic": "chaotic",
         "disko": "disko",
         "helium": "helium",
         "home-manager": "home-manager",
@@ -683,27 +723,33 @@
         "zapret-flowseal": "zapret-flowseal"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-Q9w9hxzimX0O0wqQTfMJk/tEIvRtYI7GclLHSQAatKY=",
-        "type": "tarball",
-        "url": "https://archive.org/download/zapret-tgws-nix-2026-07-10/zapret-discord-youtube.tar.gz"
+        "lastModified": 1784758289,
+        "narHash": "sha256-gUwiD33Dn5Q4Fi3RwbRmJJ7wiRw19rvyFJBBnhHWMQc=",
+        "owner": "kartavkun",
+        "repo": "zapret-discord-youtube",
+        "rev": "a7d7f1dd3765937b051d1289fba3fde2a6c8c7c0",
+        "type": "github"
       },
       "original": {
-        "type": "tarball",
-        "url": "https://archive.org/download/zapret-tgws-nix-2026-07-10/zapret-discord-youtube.tar.gz"
+        "owner": "kartavkun",
+        "repo": "zapret-discord-youtube",
+        "type": "github"
       }
     },
     "zapret-flowseal": {
       "flake": false,
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-OJ14gttWLGVkwG4XR5LZdK2UOxMhIjwdrGo7x8YSiNE=",
-        "type": "tarball",
-        "url": "https://archive.org/download/zapret-tgws-nix-2026-07-10/zapret-flowseal.tar.gz"
+        "lastModified": 1784697388,
+        "narHash": "sha256-Lf7oloMkMziQRzyE/nw16J1/hAxSuRG5ioZb7UbLRUo=",
+        "owner": "Flowseal",
+        "repo": "zapret-discord-youtube",
+        "rev": "9503dc045133000af8075e066f09bb469008e530",
+        "type": "github"
       },
       "original": {
-        "type": "tarball",
-        "url": "https://archive.org/download/zapret-tgws-nix-2026-07-10/zapret-flowseal.tar.gz"
+        "owner": "Flowseal",
+        "repo": "zapret-discord-youtube",
+        "type": "github"
       }
     }
   },

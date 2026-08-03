@@ -2,7 +2,7 @@
   description = "myflake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -20,6 +20,14 @@
     areofyl-fetch = {
       url = "github:areofyl/fetch";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    chaotic = {
+      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
     };
 
     disko = {
@@ -59,6 +67,7 @@
   outputs = inputs @ {
     nixpkgs,
     home-manager,
+    chaotic,
     ...
   }: {
     nixosConfigurations.cv01 = nixpkgs.lib.nixosSystem {
@@ -67,6 +76,7 @@
       modules = [
         ./nixos/configuration.nix
         home-manager.nixosModules.home-manager
+        chaotic.nixosModules.default
         {
           home-manager = {
             useGlobalPkgs = true;
