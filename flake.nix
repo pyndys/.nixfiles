@@ -41,7 +41,7 @@
     };
 
     nix-osu = {
-      url = "github:yunfachi/nix-osu";
+      url = "github:pyndys/nix-osu/token-file";
       inputs = {
         nixpkgs.follows = "nixpkgs";
         denix.inputs.home-manager.follows = "home-manager";

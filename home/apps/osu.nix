@@ -1,10 +1,16 @@
-{inputs, ...}: {
+{
+  config,
+  osConfig,
+  inputs,
+  ...
+}: {
   imports = [
     inputs.nix-osu.homeModules.default
   ];
   programs.osu = {
     enable = true;
-    releaseStream = "lazer";
+    dataDir = "${config.home.homeDirectory}/.local/share/osu";
+    tokenFile = osConfig.age.secrets."home/secrets/osu-token".path;
     extraGameSettings.ShowFirstRunSetup = false;
     extraFrameworkSettings.FrameSync = "Limit4x";
     settings = {

@@ -26,6 +26,12 @@
         group = "users";
         mode = "0600";
       };
+      "home/secrets/osu-token" = {
+        file = ../home/secrets/osu-token.age;
+        owner = "pyndys";
+        group = "users";
+        mode = "0400";
+      };
       "nixos/secrets/password" = {
         file = ./secrets/password.age;
         owner = "root";

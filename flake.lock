@@ -36,11 +36,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785759286,
-        "narHash": "sha256-we9WXmf1wggZXJ6si7ZZC2xQZoBBEw8KGo4csBs39Yg=",
+        "lastModified": 1785825696,
+        "narHash": "sha256-c42qGvqTC5yA/ZRzxSWnZ+NPJ5e9eScKh8sTGlTc9m8=",
         "owner": "chaotic-cx",
         "repo": "nyx",
-        "rev": "c2be267cb07f88f761d04a0a67bda471951b6d6c",
+        "rev": "fe31463820e927fdf94ca65eefaa820140fa1e47",
         "type": "github"
       },
       "original": {
@@ -426,15 +426,16 @@
         "systems": "systems_5"
       },
       "locked": {
-        "lastModified": 1785641844,
-        "narHash": "sha256-3dJpFsCZ8N4AM1rk+GuYPYElmSTpF0vktuRtNtMmODE=",
-        "owner": "yunfachi",
+        "lastModified": 1785857280,
+        "narHash": "sha256-OJcwxrMTqh9qoLnrjagHkn/XuyrumHvYpJ76w9SZ8MA=",
+        "owner": "pyndys",
         "repo": "nix-osu",
-        "rev": "59e411052bc0d103e3a270ae6020b4d227df6126",
+        "rev": "cd94d07b475ddf8f7d79691a4e3fd971c133f94a",
         "type": "github"
       },
       "original": {
-        "owner": "yunfachi",
+        "owner": "pyndys",
+        "ref": "token-file",
         "repo": "nix-osu",
         "type": "github"
       }
@@ -488,11 +489,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1785692966,
-        "narHash": "sha256-vUfIeBEfpbAfZ5zjgIkYk7eHBeVfCYVjLbWnMkseYnk=",
+        "lastModified": 1785828668,
+        "narHash": "sha256-8fsyqeO+mJqvIzeO4xIpgJe/f7MTbbVTEC6RT6WSXNs=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "643809054d65fdd466a63e3155b8c498cb483c04",
+        "rev": "e72e4f299401a3689d4b3d5fc6496b11db7064eb",
         "type": "github"
       },
       "original": {
@@ -535,11 +536,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785632973,
-        "narHash": "sha256-j4NzdhN4dgpvORbKdteIcw8M2WJyKrIgalBxT/CNk+c=",
+        "lastModified": 1785857293,
+        "narHash": "sha256-E7WXL/pYNph1ChKv4BixI9Pev6osdJL43322uZqLw5w=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "c82d4e47cc1baab21d4954760db49941aaa39b49",
+        "rev": "64cbd0ffea1a76dc0248528985e1c8ee711fae99",
         "type": "github"
       },
       "original": {

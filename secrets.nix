@@ -4,6 +4,7 @@ in {
   "home/secrets/ssh/aur.age".publicKeys = [me];
   "home/secrets/ssh/github.age".publicKeys = [me];
   "home/secrets/ssh/codeberg.age".publicKeys = [me];
+  "home/secrets/osu-token.age".publicKeys = [me];
   "nixos/secrets/password.age".publicKeys = [me];
   "nixos/secrets/tg-ws-proxy.age".publicKeys = [me];
   "nixos/secrets/searxng.age".publicKeys = [me];
