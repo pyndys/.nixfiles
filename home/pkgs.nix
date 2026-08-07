@@ -7,7 +7,6 @@
     ## Some apps
     loupe
     dialect
-    goofcord
     nautilus
     parabolic
     mission-center
@@ -25,9 +24,5 @@
     ## Dev
     python3
     android-tools
-
-    ## Others
-    zip
-    imagemagick
   ];
 }

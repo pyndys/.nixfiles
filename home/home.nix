@@ -1,6 +1,7 @@
 {
   imports = [
     ./apps
+    ./matugen
     ./shell
     ./go.nix
     ./pkgs.nix
