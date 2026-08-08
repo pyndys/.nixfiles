@@ -12,7 +12,6 @@
     homeDirectory = "/home/pyndys";
     stateVersion = "26.05";
     sessionVariables = {
-      EDITOR = "nvim";
       NIXOS_OZONE_WL = "1";
       CONCEAL_FINDER = "skim";
     };

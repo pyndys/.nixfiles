@@ -5,7 +5,7 @@
 |de | niri + dms |
 |shell | fish |
 |terminal| ghostty |
-|editor | nvf(nvim) |
+|editor | helix |
 
 and others...
 

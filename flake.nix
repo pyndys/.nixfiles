@@ -58,11 +58,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf = {
-      url = "github:notashelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     proxy-suite = {
       url = "github:FUFSoB/proxy-suite-flake";
       inputs.nixpkgs.follows = "nixpkgs";
