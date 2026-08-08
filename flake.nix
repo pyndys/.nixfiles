@@ -35,11 +35,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    millennium = {
-      url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     nix-osu = {
       url = "github:yunfachi/nix-osu";
       inputs = {
@@ -50,6 +45,11 @@
 
     nixcord = {
       url = "github:4evy/nixcord";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nixos-millennium = {
+      url = "github:re1n0/nixos-millennium";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -68,6 +68,7 @@
     nixpkgs,
     home-manager,
     chaotic,
+    nixos-millennium,
     ...
   }: {
     nixosConfigurations.cv01 = nixpkgs.lib.nixosSystem {
@@ -77,6 +78,7 @@
         ./nixos/configuration.nix
         home-manager.nixosModules.home-manager
         chaotic.nixosModules.default
+        nixos-millennium.nixosModules.default
         {
           home-manager = {
             useGlobalPkgs = true;

@@ -4,5 +4,6 @@
     ./nixcord.nix
     ./osu.nix
     ./prismlauncher.nix
+    ./steam.nix
   ];
 }
