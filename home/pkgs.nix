@@ -6,10 +6,8 @@
   home.packages = with pkgs; [
     ## Some apps
     loupe
-    dialect
     nautilus
     parabolic
-    mission-center
     telegram-desktop
     inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
 
