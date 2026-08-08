@@ -12,10 +12,6 @@ in {
       input_path = '${templates}/prismlauncher.json'
       output_path = '~/.local/share/PrismLauncher/themes/Matugen/theme.json'
 
-      [templates.discord]
-      input_path = '${templates}/discord.css'
-      output_path = '~/.config/goofcord/themes/matugen.css'
-
       [templates.telegram]
       input_path = '${templates}/telegram.tdesktop-theme'
       output_path = '~/Documents/matugen.tdesktop-theme'
