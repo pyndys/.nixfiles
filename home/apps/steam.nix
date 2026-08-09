@@ -2,13 +2,14 @@
   inputs,
   pkgs,
   ...
-}: {
+}:
+{
   imports = [
     inputs.nixos-millennium.homeManagerModules.default
   ];
   programs.steam = {
     theme = pkgs.millenniumThemes.material-theme;
-    plugins = with pkgs.millenniumPlugins; [extendium];
+    plugins = with pkgs.millenniumPlugins; [ extendium ];
     millenniumConfig.themes.conditions."material-theme-steam" = {
       "Bottom Bar Style" = "Floating";
       "Color" = "Matugen";

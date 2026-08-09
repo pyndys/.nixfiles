@@ -2,7 +2,8 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   ## System packages
   environment.systemPackages = with pkgs; [
     ## Basic pkgs
@@ -11,7 +12,8 @@
   ];
 
   ## Unfree
-  nixpkgs.config.allowUnfreePredicate = pkg:
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
     builtins.elem (lib.getName pkg) [
       "nvidia-x11"
       "osu-lazer-bin"

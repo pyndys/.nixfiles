@@ -1,6 +1,8 @@
-{config, ...}: let
+{ config, ... }:
+let
   templates = "${config.home.homeDirectory}/.nixfiles/home/matugen/templates";
-in {
+in
+{
   xdg.configFile = {
     "matugen/config.toml".text = ''
       [config]

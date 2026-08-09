@@ -48,9 +48,12 @@
       };
     };
 
-    nixcord = {
-      url = "github:4evy/nixcord";
-      inputs.nixpkgs.follows = "nixpkgs";
+    nixfmt-rs = {
+      url = "github:Mic92/nixfmt-rs";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
+      };
     };
 
     nixos-millennium = {
@@ -64,30 +67,32 @@
     };
   };
 
-  outputs = inputs @ {
-    nixpkgs,
-    home-manager,
-    chaotic,
-    nixos-millennium,
-    ...
-  }: {
-    nixosConfigurations.cv01 = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./nixos/configuration.nix
-        home-manager.nixosModules.home-manager
-        chaotic.nixosModules.default
-        nixos-millennium.nixosModules.default
-        {
-          home-manager = {
-            useGlobalPkgs = true;
-            useUserPackages = true;
-            extraSpecialArgs = {inherit inputs;};
-            users.pyndys = import ./home/home.nix;
-          };
-        }
-      ];
+  outputs =
+    inputs@{
+      nixpkgs,
+      home-manager,
+      chaotic,
+      nixos-millennium,
+      ...
+    }:
+    {
+      nixosConfigurations.cv01 = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./nixos/configuration.nix
+          home-manager.nixosModules.home-manager
+          chaotic.nixosModules.default
+          nixos-millennium.nixosModules.default
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = { inherit inputs; };
+              users.pyndys = import ./home/home.nix;
+            };
+          }
+        ];
+      };
     };
-  };
 }

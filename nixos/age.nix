@@ -1,9 +1,10 @@
-{inputs, ...}: {
+{ inputs, ... }:
+{
   imports = [
     inputs.agenix.nixosModules.default
   ];
   age = {
-    identityPaths = ["/etc/agenix/id_ed25519"];
+    identityPaths = [ "/etc/agenix/id_ed25519" ];
     secrets = {
       "home/secrets/ssh/aur" = {
         file = ../home/secrets/ssh/aur.age;

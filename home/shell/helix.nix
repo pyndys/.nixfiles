@@ -1,4 +1,9 @@
-{pkgs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}:
+{
   programs.helix = {
     enable = true;
     package = pkgs.helix_git;
@@ -13,18 +18,20 @@
       language = [
         {
           name = "nix";
-          language-servers = ["nixd"];
-          formatter.command = "${pkgs.alejandra}/bin/alejandra";
+          language-servers = [ "nixd" ];
+          formatter.command = "${
+            inputs.nixfmt-rs.packages.${pkgs.stdenv.hostPlatform.system}.default
+          }/bin/nixfmt";
           auto-format = true;
         }
         {
           name = "python";
-          language-servers = ["ruff"];
+          language-servers = [ "ruff" ];
           auto-format = true;
         }
         {
           name = "go";
-          language-servers = ["gopls"];
+          language-servers = [ "gopls" ];
           auto-format = true;
         }
       ];

@@ -2,7 +2,8 @@
   inputs,
   pkgs,
   ...
-}: {
+}:
+{
   home.packages = with pkgs; [
     ## Some apps
     loupe

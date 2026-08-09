@@ -3,7 +3,8 @@
   osConfig,
   inputs,
   ...
-}: {
+}:
+{
   imports = [
     inputs.nix-osu.homeModules.default
   ];

@@ -1,8 +1,9 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   programs.prismlauncher = {
     enable = true;
     package = pkgs.prismlauncher.override {
-      additionalLibs = [pkgs.glfw3-minecraft];
+      additionalLibs = [ pkgs.glfw3-minecraft ];
     };
     settings = {
       ApplicationTheme = "Matugen";

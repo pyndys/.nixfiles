@@ -8,7 +8,7 @@
       enableSplashScreen = false;
     };
     equicord.settings = {
-      enabledThemes = ["dank-discord.css"];
+      enabledThemes = [ "dank-discord.css" ];
       winNativeTitleBar = false;
       plugins = {
         AnonymiseFileNames.enabled = true;

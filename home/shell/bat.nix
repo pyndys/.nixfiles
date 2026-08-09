@@ -3,7 +3,7 @@
     enable = true;
     config = {
       theme = "ansi";
-      style = ["header,header-filename"];
+      style = [ "header,header-filename" ];
     };
   };
 }
