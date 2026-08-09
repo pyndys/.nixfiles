@@ -3,7 +3,7 @@
     ./boot.nix
     ./gvfs.nix
     ./locale.nix
-    ./sched-ext.nix
+    ./scx-loader.nix
     ./sudo-rs.nix
     ./zram.nix
   ];
