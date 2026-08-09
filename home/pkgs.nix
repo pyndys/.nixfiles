@@ -24,5 +24,8 @@
     ## Dev
     python3
     android-tools
+
+    ## Others
+    wl-clipboard-rs
   ];
 }
