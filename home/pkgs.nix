@@ -16,6 +16,7 @@
     dust
     conceal
     nix-melt
+    leet-helix
     microfetch
     speedtest-go
     bitwarden-cli
