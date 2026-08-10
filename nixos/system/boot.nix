@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ pkgs, ... }:
 {
   boot = {
     loader = {
@@ -12,8 +12,7 @@
 
     tmp.cleanOnBoot = true;
 
-    kernelPackages =
-      inputs.nix-cachyos-kernel.legacyPackages.x86_64-linux.linuxPackages-cachyos-latest-lto-x86_64-v3;
+    kernelPackages = pkgs.linuxPackages_cachyos-lto;
     kernelParams = [
       "quiet"
       "splash"

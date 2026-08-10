@@ -40,9 +40,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
-    # Do not override its nixpkgs input, otherwise there can be mismatch between patches and kernel version
-
     nix-osu = {
       url = "github:yunfachi/nix-osu";
       inputs = {
