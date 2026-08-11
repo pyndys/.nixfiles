@@ -1,19 +1,19 @@
-{ config, ... }:
+{ osConfig, ... }:
 {
   programs.ssh = {
     enable = true;
     enableDefaultConfig = false;
     settings = {
       "aur.archlinux.org" = {
-        identityFile = "${config.home.homeDirectory}/.ssh/aur";
+        identityFile = osConfig.age.secrets."aur".path;
         user = "aur";
       };
       "github.com" = {
-        identityFile = "${config.home.homeDirectory}/.ssh/github";
+        identityFile = osConfig.age.secrets."github".path;
         user = "git";
       };
       "codeberg.org" = {
-        identityFile = "${config.home.homeDirectory}/.ssh/codeberg";
+        identityFile = osConfig.age.secrets."codeberg".path;
         user = "git";
       };
     };

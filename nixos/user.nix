@@ -13,6 +13,6 @@
       "input"
     ];
     shell = pkgs.fishMinimal;
-    hashedPasswordFile = config.age.secrets."nixos/secrets/password".path;
+    hashedPasswordFile = config.age.secrets."password".path;
   };
 }

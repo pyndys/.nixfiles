@@ -13,7 +13,7 @@
     tgWsProxy = {
       enable = true;
       port = 8443;
-      secretFile = config.age.secrets."nixos/secrets/tg-ws-proxy".path;
+      secretFile = config.age.secrets."tg-ws-proxy".path;
       fakeTlsDomain = "4pda.to";
     };
 

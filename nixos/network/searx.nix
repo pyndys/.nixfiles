@@ -2,7 +2,7 @@
 {
   services.searx = {
     enable = true;
-    environmentFile = config.age.secrets."nixos/secrets/searxng".path;
+    environmentFile = config.age.secrets."searxng".path;
     settings = {
       server = {
         port = 8000;
