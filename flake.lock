@@ -36,11 +36,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1786541898,
-        "narHash": "sha256-qsxWqtJjRK5KzEgn/piV5QLl5/CvHusiEdsCVn5mE9E=",
+        "lastModified": 1786554367,
+        "narHash": "sha256-FAx1QIQkSW+L+F3zG6OQFGNeWb/blyCrU1CM/8RTgPc=",
         "owner": "chaotic-cx",
         "repo": "nyx",
-        "rev": "f1b54d9a44103644456dce542638d8a58e39752d",
+        "rev": "a8fd5614a78f9cbbd66683fcb9bb03e46f7a1f2f",
         "type": "github"
       },
       "original": {
@@ -140,6 +140,26 @@
       "original": {
         "owner": "AvengeMedia",
         "repo": "dms-plugin-registry",
+        "type": "github"
+      }
+    },
+    "dsearch": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1786198506,
+        "narHash": "sha256-u4tdLMzKCV2R0wn4eFtk4LKH0RmzzCkxeYqCYs/P3eg=",
+        "owner": "AvengeMedia",
+        "repo": "danksearch",
+        "rev": "632c2909bb1bb534b574c22c1347de0e6521e58a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AvengeMedia",
+        "repo": "danksearch",
         "type": "github"
       }
     },
@@ -637,6 +657,7 @@
         "chaotic": "chaotic",
         "disko": "disko",
         "dms-plugin-registry": "dms-plugin-registry",
+        "dsearch": "dsearch",
         "helium": "helium",
         "home-manager": "home-manager",
         "nix-osu": "nix-osu",
