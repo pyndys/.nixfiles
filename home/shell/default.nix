@@ -3,7 +3,6 @@
     ./bat.nix
     ./dsearch.nix
     ./eza.nix
-    ./fd.nix
     ./fish.nix
     ./git.nix
     ./helix.nix
