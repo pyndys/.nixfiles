@@ -17,13 +17,7 @@
       };
     };
 
-    chaotic = {
-      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        home-manager.follows = "home-manager";
-      };
-    };
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     disko = {
       url = "github:nix-community/disko/latest";
@@ -63,10 +57,7 @@
       };
     };
 
-    nixos-millennium = {
-      url = "github:re1n0/nixos-millennium";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nixos-millennium.url = "github:re1n0/nixos-millennium";
 
     proxy-suite = {
       url = "github:FUFSoB/proxy-suite-flake";
