@@ -363,6 +363,21 @@
         "type": "github"
       }
     },
+    "matugen-nix": {
+      "locked": {
+        "lastModified": 1786624299,
+        "narHash": "sha256-xGcWAzsRq7EtyNyM+nyAFUEpBgMZm2RIetMKDHFP4LA=",
+        "owner": "pyndys",
+        "repo": "matugen-nix",
+        "rev": "950b7f9d316b39bcf6a51c16d9b2863a4f828066",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pyndys",
+        "repo": "matugen-nix",
+        "type": "github"
+      }
+    },
     "millennium": {
       "inputs": {
         "millennium-src": "millennium-src",
@@ -660,6 +675,7 @@
         "dsearch": "dsearch",
         "helium": "helium",
         "home-manager": "home-manager",
+        "matugen-nix": "matugen-nix",
         "nix-osu": "nix-osu",
         "nixfmt-rs": "nixfmt-rs",
         "nixos-millennium": "nixos-millennium",
