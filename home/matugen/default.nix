@@ -4,7 +4,7 @@ let
 in
 {
   imports = [
-    inputs.matugen-nix.homeManagerModules.default
+    inputs.matugen-nix.homeModules.default
   ];
   programs.matugen = {
     enable = true;
