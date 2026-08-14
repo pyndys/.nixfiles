@@ -12,7 +12,7 @@
 
     tmp.cleanOnBoot = true;
 
-    kernelPackages = pkgs.linuxPackages_cachyos-lto;
+    kernelPackages = pkgs.linuxPackages_cachyos;
     kernelParams = [
       "quiet"
       "splash"

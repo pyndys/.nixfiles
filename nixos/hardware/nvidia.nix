@@ -15,7 +15,7 @@
       };
       open = true;
       nvidiaSettings = false; # nvidia-smi is enough
-      package = pkgs.nvidia_cachyos-lto;
+      package = pkgs.nvidia_cachyos;
     };
   };
 }
