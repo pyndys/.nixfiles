@@ -6,7 +6,6 @@
       additionalLibs = [ pkgs.glfw3-minecraft ];
     };
     settings = {
-      ApplicationTheme = "Matugen";
       AutomaticJavaDownload = false;
       AutomaticJavaSwitch = true;
       MaxMemAlloc = 6144;

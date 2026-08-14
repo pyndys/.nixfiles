@@ -47,7 +47,7 @@
       };
     };
 
-    matugen-nix.url = "github:pyndys/matugen-nix";
+    matugenix.url = "github:pyndys/matugenix";
 
     nixfmt-rs = {
       url = "github:Mic92/nixfmt-rs";

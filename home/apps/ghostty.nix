@@ -4,7 +4,6 @@
     settings = {
       app-notifications = false;
       confirm-close-surface = false;
-      theme = "dankcolors";
     };
   };
 }
