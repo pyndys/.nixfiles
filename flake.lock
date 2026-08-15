@@ -32,11 +32,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1786707852,
-        "narHash": "sha256-jLb9OqDsOh3b6oC1ItCt/gB1YvJ/HtElmePvUFUFz2M=",
+        "lastModified": 1786764133,
+        "narHash": "sha256-GoR0J8drDomtttibvTkvj2hST+L9E92f3WBze6hEJls=",
         "owner": "chaotic-cx",
         "repo": "nyx",
-        "rev": "f31bfbb5b1c51618a770e5e448ffa953bc3c0051",
+        "rev": "759ebbb84e639b4c37056f34ff17553c16acdd53",
         "type": "github"
       },
       "original": {
@@ -142,11 +142,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1786723351,
-        "narHash": "sha256-LoPpH0+xAh4nXXfCUjMqeFkHBdQwhi5SIlWghf6Jwm0=",
+        "lastModified": 1786807394,
+        "narHash": "sha256-qc6FZVc4dgwRd1EDt57luned7ZalG5ohIhwN3zoCkrQ=",
         "owner": "AvengeMedia",
         "repo": "dms-plugin-registry",
-        "rev": "5e0ffd7d3098c3d97d7a72defdc49819c85cb66d",
+        "rev": "e608e8c3605aedd3e8b895d8e1323311812f8673",
         "type": "github"
       },
       "original": {
@@ -335,11 +335,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1786603258,
-        "narHash": "sha256-j1lYPT7YxOQc/G7NcJKqdpQ5/A5yX2aZdhVKkJR6cM4=",
+        "lastModified": 1786719456,
+        "narHash": "sha256-B74DLQs/VjlqyhnnX3tguWwghqJHWSJX30TKZuAljIg=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "0668fdbc15bd602e463cab37ff64346021193652",
+        "rev": "83b7606dcf44abe3a94b86e8bb2b3355d22e8797",
         "type": "github"
       },
       "original": {
@@ -415,14 +415,16 @@
     "matugenix": {
       "inputs": {
         "dms": "dms",
-        "matugen-themes": "matugen-themes"
+        "matugen-themes": "matugen-themes",
+        "noctalia": "noctalia",
+        "noctalia-community": "noctalia-community"
       },
       "locked": {
-        "lastModified": 1786731098,
-        "narHash": "sha256-BnYX6chCffEe56ExHZ9pwXBNCuKhVpSG5amATbGfHTA=",
+        "lastModified": 1786812853,
+        "narHash": "sha256-/9o4dIyA1OiGFx7r80MqdRYBb4432AQyk+G41fTXYLU=",
         "owner": "pyndys",
         "repo": "matugenix",
-        "rev": "b0a23287e304cf9d31bc8fe9318abfbf1d3e8ec1",
+        "rev": "f90dcf272c21abf2dfab8b2d431cac9e1c002f02",
         "type": "github"
       },
       "original": {
@@ -684,6 +686,38 @@
         "owner": "NixOS",
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "noctalia": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1786715539,
+        "narHash": "sha256-/v++z9CggpnX3g94bLckf4OUAYvOIMErfOzk+xP2lBE=",
+        "owner": "noctalia-dev",
+        "repo": "noctalia",
+        "rev": "ab2cfdf6e7b93ff0dffb80fb4b406294de54430d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "noctalia",
+        "type": "github"
+      }
+    },
+    "noctalia-community": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1786135052,
+        "narHash": "sha256-z82bEfOdxqx8BsDX6mCnyXXKeb6xSqciCvAJ1BM6E34=",
+        "owner": "noctalia-dev",
+        "repo": "community-templates",
+        "rev": "eeb39a8a4113088d076962f5c33a2080d2f1a2e0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "community-templates",
         "type": "github"
       }
     },

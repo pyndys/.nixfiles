@@ -10,18 +10,13 @@ in
     enable = true;
     targets = {
       autoEnable = true;
-      autoDank16 = true;
-      helix.enable = false;
+      autoTerminalColors = "dank16";
+      helix.themeVariant = "noctalia";
+      equibop.themeVariant = "dms";
     };
-    settings.templates = {
-      millennium = {
-        input_path = "${templates}/millennium.css";
-        output_path = "~/.steam/steam/steamui/skins/Material-Theme/css/main/colors/matugen.css";
-      };
-      telegram = {
-        input_path = "${templates}/telegram.tdesktop-theme";
-        output_path = "~/Documents/matugen.tdesktop-theme";
-      };
+    settings.templates.telegram = {
+      input_path = "${templates}/telegram.tdesktop-theme";
+      output_path = "~/Documents/matugen.tdesktop-theme";
     };
   };
 }

@@ -8,12 +8,9 @@
     enable = true;
     package = pkgs.helix_git;
     defaultEditor = true;
-    settings = {
-      theme = "base16_transparent";
-      editor = {
-        color-modes = true;
-        line-number = "relative";
-      };
+    settings.editor = {
+      color-modes = true;
+      line-number = "relative";
     };
     languages = {
       language-server = {

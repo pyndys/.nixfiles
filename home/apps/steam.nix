@@ -12,7 +12,6 @@
     plugins = with pkgs.millenniumPlugins; [ extendium ];
     millenniumConfig.themes.conditions."material-theme-steam" = {
       "Bottom Bar Style" = "Floating";
-      "Color" = "Matugen";
       "Font" = "Google Sans";
       "Game Icons Shape" = "Rounded Square";
       "Groups/Curators Picture Shape" = "Circle";
