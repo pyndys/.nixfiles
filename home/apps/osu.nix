@@ -11,7 +11,7 @@
   programs.osu = {
     enable = true;
     dataDir = "${config.home.homeDirectory}/.local/share/osu";
-    tokenFile = osConfig.age.secrets."osu-refresh-token".path;
+    # tokenFile = osConfig.age.secrets."osu-refresh-token".path;
     extraGameSettings.ShowFirstRunSetup = false;
     extraFrameworkSettings.FrameSync = "Limit4x";
     settings = {

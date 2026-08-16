@@ -17,7 +17,10 @@
       };
     };
 
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    chaotic = {
+      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+      inputs.home-manager.follows = "home-manager";
+    };
 
     disko = {
       url = "github:nix-community/disko/latest";
