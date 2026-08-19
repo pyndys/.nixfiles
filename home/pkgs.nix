@@ -24,6 +24,7 @@
     ## Dev
     python3
     android-tools
+    payload-dumper-go
 
     ## Others
     wl-clipboard-rs
