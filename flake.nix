@@ -37,6 +37,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
+
     nix-osu = {
       url = "github:yunfachi/nix-osu";
       inputs = {
@@ -68,6 +70,7 @@
       nixpkgs,
       home-manager,
       chaotic,
+      nix-cachyos-kernel,
       nixos-millennium,
       ...
     }:
@@ -81,6 +84,7 @@
           chaotic.nixosModules.default
           nixos-millennium.nixosModules.default
           {
+            nixpkgs.overlays = [ nix-cachyos-kernel.overlays.pinned ];
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
