@@ -1,7 +1,7 @@
 {
   imports = [
+    ./alacritty.nix
     ./equibop.nix
-    ./ghostty.nix
     ./osu.nix
     ./prismlauncher.nix
     ./steam.nix
