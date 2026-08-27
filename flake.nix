@@ -37,6 +37,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    matugenix.url = "github:pyndys/matugenix";
+
     nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
 
     nix-osu = {
@@ -47,7 +49,10 @@
       };
     };
 
-    matugenix.url = "github:pyndys/matugenix";
+    nixcord = {
+      url = "github:4evy/nixcord";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     nixfmt-rs = {
       url = "github:Mic92/nixfmt-rs";
@@ -58,6 +63,11 @@
     };
 
     nixos-millennium.url = "github:re1n0/nixos-millennium";
+
+    nixowos = {
+      url = "github:yunfachi/nixowos";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     proxy-suite = {
       url = "github:FUFSoB/proxy-suite-flake";
@@ -70,6 +80,7 @@
       nixpkgs,
       home-manager,
       chaotic,
+      nixowos,
       nix-cachyos-kernel,
       nixos-millennium,
       ...
@@ -82,9 +93,11 @@
           ./nixos/configuration.nix
           home-manager.nixosModules.home-manager
           chaotic.nixosModules.default
+          nixowos.nixosModules.default
           nixos-millennium.nixosModules.default
           {
             nixpkgs.overlays = [ nix-cachyos-kernel.overlays.pinned ];
+            nixowos.enable = true;
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;

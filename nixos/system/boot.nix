@@ -13,7 +13,7 @@
     tmp.cleanOnBoot = true;
 
     kernelPackages =
-      inputs.nix-cachyos-kernel.legacyPackages.x86_64-linux.linuxPackages-cachyos-latest-x86_64-v3;
+      inputs.nix-cachyos-kernel.legacyPackages.x86_64-linux.linuxPackages-cachyos-latest-lto-x86_64-v3;
     kernelParams = [
       "quiet"
       "splash"

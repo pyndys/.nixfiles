@@ -15,8 +15,10 @@
   nixpkgs.config.allowUnfreePredicate =
     pkg:
     builtins.elem (lib.getName pkg) [
+      "discord"
       "nvidia-x11"
       "osu-lazer-bin"
+      "spotify"
       "steam"
       "steam-unwrapped"
     ];

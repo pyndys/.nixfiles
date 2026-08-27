@@ -9,7 +9,7 @@
       autoEnable = true;
       autoTerminalColors = "dank16";
       helix.themeVariant = "noctalia";
-      equibop.themeVariant = "dms";
+      nixcord.themeVariant = "dms";
     };
     settings.templates.telegram = {
       input_path = ./templates/telegram.tdesktop-theme;
