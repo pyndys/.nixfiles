@@ -2,7 +2,7 @@
   description = "myflake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -11,19 +11,29 @@
 
     agenix = {
       url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    chaotic = {
+      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
       inputs = {
         nixpkgs.follows = "nixpkgs";
         home-manager.follows = "home-manager";
       };
     };
 
-    chaotic = {
-      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-      inputs.home-manager.follows = "home-manager";
+    darhud = {
+      url = "github:DarSitam/darhud";
+      flake = false;
     };
 
     disko = {
       url = "github:nix-community/disko/latest";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    dms = {
+      url = "github:AvengeMedia/DankMaterialShell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -32,14 +42,22 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    helium = {
-      url = "github:schembriaiden/helium-browser-nix-flake";
+    fast-nix-gc = {
+      url = "github:Mic92/fast-nix-gc";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    matugenix.url = "github:pyndys/matugenix";
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
-    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
+    geohide = {
+      url = "github:Internet-Helper/GeoHideDNS";
+      flake = false;
+    };
+
+    matugenix.url = "github:pyndys/matugenix";
 
     nix-osu = {
       url = "github:yunfachi/nix-osu";
@@ -51,7 +69,10 @@
 
     nixcord = {
       url = "github:4evy/nixcord";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
     };
 
     nixfmt-rs = {
@@ -62,16 +83,30 @@
       };
     };
 
-    nixos-millennium.url = "github:re1n0/nixos-millennium";
-
-    nixowos = {
-      url = "github:yunfachi/nixowos";
+    nixos-millennium = {
+      url = "github:re1n0/nixos-millennium/release";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     proxy-suite = {
       url = "github:FUFSoB/proxy-suite-flake";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        disko.follows = "disko";
+      };
+    };
+
+    steam-config-nix = {
+      url = "github:different-name/steam-config-nix";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
     };
   };
 
@@ -80,11 +115,17 @@
       nixpkgs,
       home-manager,
       chaotic,
-      nixowos,
-      nix-cachyos-kernel,
+      fast-nix-gc,
+      nixfmt-rs,
       nixos-millennium,
       ...
     }:
+    let
+      customOverlay = final: prev: {
+        fast-nix-gc = fast-nix-gc.packages.${prev.stdenv.hostPlatform.system}.default;
+        nixfmt-rs = nixfmt-rs.packages.${prev.stdenv.hostPlatform.system}.default;
+      };
+    in
     {
       nixosConfigurations.cv01 = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -92,12 +133,10 @@
         modules = [
           ./nixos/configuration.nix
           home-manager.nixosModules.home-manager
-          chaotic.nixosModules.default
-          nixowos.nixosModules.default
           nixos-millennium.nixosModules.default
+          chaotic.nixosModules.default
           {
-            nixpkgs.overlays = [ nix-cachyos-kernel.overlays.pinned ];
-            nixowos.enable = true;
+            nixpkgs.overlays = [ customOverlay ];
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;

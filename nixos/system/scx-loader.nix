@@ -1,11 +1,9 @@
-{ pkgs, ... }:
 {
   services.scx-loader = {
     enable = true;
-    schedsPackages = [ pkgs.scx.rustscheds ];
     config = {
-      default_sched = "scx_bpfland";
-      default_mode = "Gaming";
+      default_sched = "scx_cosmos";
+      default_mode = "Auto";
     };
   };
 }

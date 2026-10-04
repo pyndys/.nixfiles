@@ -1,6 +1,6 @@
 {
   imports = [
-    ./fonts.nix
+    ./nautilus-open-any-terminal.nix
     ./steam.nix
   ];
 }

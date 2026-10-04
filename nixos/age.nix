@@ -24,12 +24,6 @@
         group = "users";
         mode = "0600";
       };
-      "osu-refresh-token" = {
-        file = ../home/secrets/osu-token.age;
-        owner = "pyndys";
-        group = "users";
-        mode = "0400";
-      };
       "password" = {
         file = ./secrets/password.age;
         owner = "root";
@@ -38,12 +32,6 @@
       };
       "tg-ws-proxy" = {
         file = ./secrets/tg-ws-proxy.age;
-        owner = "root";
-        group = "root";
-        mode = "0400";
-      };
-      "searxng" = {
-        file = ./secrets/searxng.age;
         owner = "root";
         group = "root";
         mode = "0400";

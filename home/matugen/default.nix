@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ config, inputs, ... }:
 {
   imports = [
     inputs.matugenix.homeModules.default
@@ -11,9 +11,9 @@
       helix.themeVariant = "noctalia";
       nixcord.themeVariant = "dms";
     };
-    settings.templates.telegram = {
-      input_path = ./templates/telegram.tdesktop-theme;
-      output_path = "~/Documents/matugen.tdesktop-theme";
+    settings.templates.steam = {
+      input_path = ./templates/steam.css;
+      output_path = "${config.xdg.dataHome}/Steam/steamui/skins/Material-Theme/css/main/colors/matugen.css";
     };
   };
 }

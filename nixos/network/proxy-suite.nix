@@ -12,15 +12,14 @@
 
     tgWsProxy = {
       enable = true;
-      port = 8443;
+      listener.port = 8443;
       secretFile = config.age.secrets."tg-ws-proxy".path;
       fakeTlsDomain = "4pda.to";
     };
 
     zapret = {
       enable = true;
-      configName = "general(ALT9)";
-      gameFilter = "all";
+      zapret-discord-youtube.configName = "general (ALT9)";
     };
   };
 }

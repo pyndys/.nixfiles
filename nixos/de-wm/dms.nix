@@ -1,9 +1,10 @@
 { inputs, ... }:
 {
   imports = [
+    inputs.dms.nixosModules.dank-material-shell
     inputs.dms-plugin-registry.nixosModules.default
   ];
-  programs.dms-shell = {
+  programs.dank-material-shell = {
     enable = true;
 
     systemd = {
@@ -12,17 +13,17 @@
     };
 
     ## Dependencies for dms
-    enableSystemMonitoring = true;
     enableVPN = false;
     enableDynamicTheming = true;
     enableAudioWavelength = true;
     enableCalendarEvents = false;
-    enableClipboardPaste = true;
 
     plugins = {
       dankKDEConnect.enable = true;
+      dankLauncherKeys.enable = true;
       calculator.enable = true;
       catWidget.enable = true;
+      webSearch.enable = true;
     };
   };
 

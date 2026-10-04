@@ -17,10 +17,6 @@
       frameless = true;
       plugins = {
         anonymiseFileNames.enable = true;
-        betterFolders = {
-          enable = true;
-          closeOthers = true;
-        };
         betterSettings.enable = true;
         betterUploadButton.enable = true;
         callTimer.enable = true;
@@ -28,12 +24,13 @@
         declutter.enable = true;
         gameActivityToggle.enable = true;
         gitHubRepos.enable = true;
-        messageLoggerEnhanced = {
+        markdownTables.enable = true;
+        messageLogger.enable = true;
+        noBlockedMessages = {
           enable = true;
-          saveImages = true;
+          ignoreMessages = true;
         };
         noTypingAnimation.enable = true;
-        showRolesInChat.enable = true;
         voiceRejoin.enable = true;
         volumeBooster.enable = true;
         whoReacted.enable = true;

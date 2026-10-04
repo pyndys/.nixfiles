@@ -1,10 +1,9 @@
-{ config, ... }:
 {
   imports = [
     ./apps
+    ./dev
     ./matugen
     ./shell
-    ./go.nix
     ./pkgs.nix
   ];
 
@@ -15,7 +14,6 @@
     sessionVariables = {
       NIXOS_OZONE_WL = "1";
       CONCEAL_FINDER = "skim";
-      NH_FLAKE = "${config.home.homeDirectory}/.nixfiles";
     };
     shell.enableFishIntegration = true; # Fish everywhere!!!
     enableNixpkgsReleaseCheck = false;

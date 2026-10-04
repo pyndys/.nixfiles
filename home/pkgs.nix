@@ -1,32 +1,30 @@
-{
-  inputs,
-  pkgs,
-  ...
-}:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [
     ## Some apps
     loupe
     nautilus
     parabolic
-    telegram-desktop
-    inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
+    materialgram
 
     ## CLI pkgs
     dust
     conceal
     nix-melt
-    leet-helix
     microfetch
     speedtest-go
     bitwarden-cli
 
     ## Dev
+    clang
+    rustc
     python3
+    rustlings
     android-tools
     payload-dumper-go
 
     ## Others
     wl-clipboard-rs
+    morewaita-icon-theme
   ];
 }

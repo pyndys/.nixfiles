@@ -12,6 +12,7 @@
 
   nix = {
     settings = {
+      substituters = [ "https://mirror.yandex.ru/nixos" ];
       experimental-features = [
         "nix-command"
         "flakes"
@@ -20,10 +21,6 @@
         "root"
         "pyndys"
       ];
-    };
-    optimise = {
-      automatic = true;
-      dates = "weekly";
     };
   };
 

@@ -1,14 +1,9 @@
-{
-  lib,
-  pkgs,
-  ...
-}:
+{ lib, pkgs, ... }:
 {
   ## System packages
   environment.systemPackages = with pkgs; [
-    ## Basic pkgs
-    wget
-    git
+    fast-nix-gc
+    xwayland-satellite
   ];
 
   ## Unfree
@@ -18,7 +13,6 @@
       "discord"
       "nvidia-x11"
       "osu-lazer-bin"
-      "spotify"
       "steam"
       "steam-unwrapped"
     ];

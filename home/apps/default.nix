@@ -1,9 +1,10 @@
 {
   imports = [
-    ./alacritty.nix
+    ./ghostty.nix
     ./nixcord.nix
     ./osu.nix
     ./prismlauncher.nix
     ./steam.nix
+    ./zen.nix
   ];
 }
