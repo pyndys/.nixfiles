@@ -7,31 +7,31 @@
     identityPaths = [ "/etc/agenix/id_ed25519" ];
     secrets = {
       "aur" = {
-        file = ../home/secrets/ssh/aur.age;
+        file = ../secrets/ssh/aur.age;
         owner = "pyndys";
         group = "users";
         mode = "0600";
       };
       "github" = {
-        file = ../home/secrets/ssh/github.age;
+        file = ../secrets/ssh/github.age;
         owner = "pyndys";
         group = "users";
         mode = "0600";
       };
       "codeberg" = {
-        file = ../home/secrets/ssh/codeberg.age;
+        file = ../secrets/ssh/codeberg.age;
         owner = "pyndys";
         group = "users";
         mode = "0600";
       };
       "password" = {
-        file = ./secrets/password.age;
+        file = ../secrets/password.age;
         owner = "root";
         group = "root";
         mode = "0400";
       };
       "tg-ws-proxy" = {
-        file = ./secrets/tg-ws-proxy.age;
+        file = ../secrets/tg-ws-proxy.age;
         owner = "root";
         group = "root";
         mode = "0400";
