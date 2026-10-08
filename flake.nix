@@ -16,10 +16,7 @@
 
     chaotic = {
       url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        home-manager.follows = "home-manager";
-      };
+      inputs.home-manager.follows = "home-manager";
     };
 
     darhud = {
@@ -83,10 +80,7 @@
       };
     };
 
-    nixos-millennium = {
-      url = "github:re1n0/nixos-millennium/release";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nixos-millennium.url = "github:re1n0/nixos-millennium/release";
 
     proxy-suite = {
       url = "github:FUFSoB/proxy-suite-flake";
