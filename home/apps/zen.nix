@@ -34,7 +34,6 @@
       extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
         bitwarden
         clearurls
-        darkreader
         localcdn
         sponsorblock
         ublock-origin
