@@ -90,6 +90,11 @@
       };
     };
 
+    riff = {
+      url = "github:rootscripts/riff";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     steam-config-nix = {
       url = "github:different-name/steam-config-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -112,6 +117,7 @@
       fast-nix-gc,
       nixfmt-rs,
       nixos-millennium,
+      riff,
       ...
     }:
     let
@@ -130,7 +136,10 @@
           nixos-millennium.nixosModules.default
           chaotic.nixosModules.default
           {
-            nixpkgs.overlays = [ customOverlay ];
+            nixpkgs.overlays = [
+              customOverlay
+              riff.overlays.default
+            ];
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;

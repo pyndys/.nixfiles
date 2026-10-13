@@ -2,9 +2,9 @@
 {
   home.packages = with pkgs; [
     ## Some apps
+    riff
     loupe
     nautilus
-    parabolic
     materialgram
 
     ## CLI pkgs
