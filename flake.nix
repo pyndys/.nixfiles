@@ -4,20 +4,12 @@
   inputs = {
     nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst";
 
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     agenix = {
       url = "github:ryantm/agenix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    chaotic = {
-      url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-      inputs.home-manager.follows = "home-manager";
-    };
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     darhud = {
       url = "github:DarSitam/darhud";
@@ -29,13 +21,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    dms = {
-      url = "github:AvengeMedia/DankMaterialShell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    dms-plugin-registry = {
-      url = "github:AvengeMedia/dms-plugin-registry";
+    dux-plugin-registry = {
+      url = "github:duxlabs-dev/dux-plugin-registry";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -44,43 +31,40 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    firefox-addons = {
-      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     geohide = {
       url = "github:Internet-Helper/GeoHideDNS";
       flake = false;
     };
 
-    matugenix.url = "github:pyndys/matugenix";
+    helium = {
+      url = "github:amaanq/helium-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
-    nix-osu = {
-      url = "github:yunfachi/nix-osu";
+    hjem = {
+      url = "github:feel-co/hjem";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    hjem-rum = {
+      url = "github:snugnug/hjem-rum";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        denix.inputs.home-manager.follows = "home-manager";
+        hjem.follows = "hjem";
       };
+    };
+
+    millennium = {
+      url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nixcord = {
       url = "github:4evy/nixcord";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        home-manager.follows = "home-manager";
-      };
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixfmt-rs = {
-      url = "github:Mic92/nixfmt-rs";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
-      };
-    };
-
-    nixos-millennium.url = "github:re1n0/nixos-millennium/release";
+    nixugen.url = "github:pyndys/nixugen";
 
     proxy-suite = {
       url = "github:FUFSoB/proxy-suite-flake";
@@ -90,40 +74,18 @@
       };
     };
 
-    riff = {
-      url = "github:rootscripts/riff";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     steam-config-nix = {
       url = "github:different-name/steam-config-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        home-manager.follows = "home-manager";
-      };
-    };
   };
 
   outputs =
-    inputs@{
-      nixpkgs,
-      home-manager,
-      chaotic,
-      fast-nix-gc,
-      nixfmt-rs,
-      nixos-millennium,
-      riff,
-      ...
-    }:
+    inputs@{ nixpkgs, ... }:
     let
       customOverlay = final: prev: {
-        fast-nix-gc = fast-nix-gc.packages.${prev.stdenv.hostPlatform.system}.default;
-        nixfmt-rs = nixfmt-rs.packages.${prev.stdenv.hostPlatform.system}.default;
+        fast-nix-gc = inputs.fast-nix-gc.packages.${prev.stdenv.hostPlatform.system}.default;
+        helium = inputs.helium.packages.${prev.stdenv.hostPlatform.system}.default;
       };
     in
     {
@@ -131,20 +93,18 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./nixos/configuration.nix
-          home-manager.nixosModules.home-manager
-          nixos-millennium.nixosModules.default
-          chaotic.nixosModules.default
+          ./hosts/cv01
+          ./modules
+          inputs.chaotic.nixosModules.default
+          inputs.hjem.nixosModules.default
           {
-            nixpkgs.overlays = [
-              customOverlay
-              riff.overlays.default
-            ];
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              extraSpecialArgs = { inherit inputs; };
-              users.pyndys = import ./home/home.nix;
+            nixpkgs = {
+              config.allowUnfree = true;
+              overlays = [
+                customOverlay
+                inputs.nixugen.overlays.default
+                inputs.millennium.overlays.default
+              ];
             };
           }
         ];

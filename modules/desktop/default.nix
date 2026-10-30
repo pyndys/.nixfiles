@@ -1,0 +1,6 @@
+{
+  imports = [
+    ./dux
+    ./niri.nix
+  ];
+}
