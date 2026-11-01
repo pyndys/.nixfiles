@@ -7,8 +7,8 @@
     ./locale.nix
     ./nh.nix
     ./nix.nix
+    ./run0.nix
     ./scx-loader.nix
-    ./sudo-rs.nix
     ./zram.nix
   ];
 }

@@ -12,7 +12,6 @@
       environment.sessionVariables = {
         EDITOR = "hx";
         VISUAL = "hx";
-        FZF_DEFAULT_OPTS = "--color=16";
         NH_FLAKE = "${config.hjem.users.pyndys.directory}/.nixfiles";
       };
       imports = [

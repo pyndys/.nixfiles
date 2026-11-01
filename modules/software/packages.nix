@@ -11,7 +11,6 @@
     ## CLI tools
     eza
     dust
-    conceal
     nix-melt
     microfetch
     fast-nix-gc

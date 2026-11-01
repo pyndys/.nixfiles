@@ -6,7 +6,6 @@
 
     aliases = {
       du = "dust";
-      rm = "cnc"; # Move to trash with conceal
       py = "python";
 
       ls = "eza";
