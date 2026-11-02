@@ -7,12 +7,13 @@
     aliases = {
       du = "dust";
       py = "python";
+      cat = "gat";
 
-      ls = "eza";
-      ll = "eza -l";
-      la = "eza -a";
-      lt = "eza --tree";
-      lla = "eza -la";
+      ls = "eza --icons=auto";
+      ll = "eza -l --icons=auto";
+      la = "eza -a --icons=auto";
+      lt = "eza --tree --icons=auto";
+      lla = "eza -la --icons=auto";
     };
 
     plugins = {

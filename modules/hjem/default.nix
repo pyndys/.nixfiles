@@ -13,6 +13,8 @@
         EDITOR = "hx";
         VISUAL = "hx";
         NH_FLAKE = "${config.hjem.users.pyndys.directory}/.nixfiles";
+        GAT_FORMAT = "terminal16";
+        GAT_THEME = "vim";
       };
       imports = [
         ./rum

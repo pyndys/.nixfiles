@@ -10,6 +10,7 @@
 
     ## CLI tools
     eza
+    gat
     dust
     nix-melt
     microfetch
