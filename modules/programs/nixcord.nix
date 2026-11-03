@@ -9,14 +9,12 @@
     discord = {
       enable = true;
       equicord.enable = true;
-      krisp.enable = true;
     };
 
     extraConfig.nativeTitleBar = true;
 
     config = {
       enabledThemes = [ "matugen.css" ];
-      # frameless = true;
       plugins = {
         anonymiseFileNames.enable = true;
         betterSettings.enable = true;

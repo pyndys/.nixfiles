@@ -1,0 +1,21 @@
+[[rule]]
+name = "base"
+priority = 10
+cpu.governor = { first-available-governor = ["powersave", "schedutil"] }
+cpu.energy-performance-preference = { first-available-energy-performance-preference = ["balance_performance", "balance_power"] }
+cpu.turbo = { if = "?turbo-available", then = true }
+
+[[rule]]
+name = "cool-down"
+priority = 60
+if = { is-more-than = 80.0, value = "$cpu-temperature" }
+cpu.turbo = { if = "?turbo-available", then = false }
+
+[[rule]]
+name = "battery"
+priority = 50
+if = "?discharging"
+cpu.turbo = { if = "?turbo-available", then = false }
+cpu.energy-performance-preference = { first-available-energy-performance-preference = ["power", "balance_power"] }
+power.platform-profile = { first-available-platform-profile = ["low-power", "quiet"] }
+usb.autosuspend = true

@@ -6,11 +6,9 @@
     helium
     materialgram
     prismlauncher
-    osu-lazer-bin
 
     ## CLI tools
     eza
-    gat
     dust
     nix-melt
     microfetch

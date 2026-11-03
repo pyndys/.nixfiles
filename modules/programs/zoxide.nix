@@ -1,5 +1,5 @@
 {
-  programs.nh = {
+  programs.zoxide = {
     enable = true;
   };
 }

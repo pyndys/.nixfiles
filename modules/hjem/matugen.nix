@@ -24,10 +24,6 @@ in
         input_path = t.prismlauncher;
         output_path = "${l}/PrismLauncher/themes/matugen/theme.json";
       };
-      steam = {
-        input_path = t.steam;
-        output_path = "${l}/Steam/steamui/skins/Material-Theme/css/main/colors/matugen.css";
-      };
     };
   };
 }

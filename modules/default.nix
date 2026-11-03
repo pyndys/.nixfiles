@@ -1,12 +1,17 @@
 {
   imports = [
-    ./desktop
-    ./hardware
+    ./environment
     ./hjem
-    ./network
-    ./software
-    ./system
+    ./programs
+    ./services
     ./age.nix
-    ./user.nix
+    ./boot.nix
+    ./disko.nix
+    ./locale.nix
+    ./networking.nix
+    ./nix.nix
+    ./run0.nix
+    ./users.nix
+    ./zram.nix
   ];
 }

@@ -1,27 +1,19 @@
 { pkgs, ... }:
 {
-  rum.programs.fish = {
+  programs.fish = {
     enable = true;
     package = pkgs.fishMinimal;
 
-    aliases = {
+    shellAliases = {
       du = "dust";
       py = "python";
-      cat = "gat";
+      cat = "bat";
 
       ls = "eza --icons=auto";
       ll = "eza -l --icons=auto";
       la = "eza -a --icons=auto";
       lt = "eza --tree --icons=auto";
       lla = "eza -la --icons=auto";
-    };
-
-    plugins = {
-      inherit (pkgs.fishPlugins)
-        autopair
-        git-abbr
-        sponge
-        ;
     };
   };
 }

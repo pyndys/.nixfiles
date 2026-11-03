@@ -1,9 +1,9 @@
-{ inputs, ... }: {
+{ inputs, ... }:
+{
   imports = [ inputs.fast-nix-gc.nixosModules.default ];
-  services.fast-nix-gc = {
+  services.fast-nix-optimise = {
     enable = true;
     automatic = true;
     dates = "weekly";
-    deleteOlderThan = "14d";
   };
 }

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 {
   users.users.pyndys = {
     isNormalUser = true;
@@ -8,7 +8,7 @@
       "wheel"
       "input"
     ];
-    shell = pkgs.fishMinimal;
+    shell = config.programs.fish.package;
     hashedPasswordFile = config.age.secrets."password".path;
   };
 }
