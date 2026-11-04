@@ -89,7 +89,7 @@
     {
       nixosConfigurations = {
         cv01 = mkHost "cv01";
-        teto = mkHost "teto";
+        tetobook = mkHost "tetobook";
       };
     };
 }
