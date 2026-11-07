@@ -20,6 +20,26 @@
         "type": "github"
       }
     },
+    "bakapkgs": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1794078796,
+        "narHash": "sha256-yylArYbE5Hbba/h35RcEn4eN+eufwASJkcu3qxSgqf4=",
+        "owner": "pyndys",
+        "repo": "bakapkgs",
+        "rev": "432b227be62c90d2465655c8f071221d3fb07971",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pyndys",
+        "repo": "bakapkgs",
+        "type": "github"
+      }
+    },
     "chaotic": {
       "inputs": {
         "flake-schemas": "flake-schemas",
@@ -355,6 +375,7 @@
     "root": {
       "inputs": {
         "agenix": "agenix",
+        "bakapkgs": "bakapkgs",
         "chaotic": "chaotic",
         "disko": "disko",
         "dux-plugin-registry": "dux-plugin-registry",
@@ -365,28 +386,7 @@
         "nixcord": "nixcord",
         "nixpkgs": "nixpkgs_2",
         "nixugen": "nixugen",
-        "tg-ws-proxy-rs": "tg-ws-proxy-rs",
         "zapret-discord-youtube": "zapret-discord-youtube"
-      }
-    },
-    "tg-ws-proxy-rs": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1793896418,
-        "narHash": "sha256-V3y1fz1C4UUJ8a08ndFlMahYO1QDWF+LqGngT4dx0qA=",
-        "owner": "kerator221",
-        "repo": "tg-ws-proxy-rs-flake",
-        "rev": "b949339c29d04f2a5df06ecc948052d7959f9f21",
-        "type": "github"
-      },
-      "original": {
-        "owner": "kerator221",
-        "repo": "tg-ws-proxy-rs-flake",
-        "type": "github"
       }
     },
     "treefmt-nix": {

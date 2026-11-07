@@ -10,7 +10,7 @@ in
     after = [ "network-online.target" ];
     environment.TG_SECRET = "0123456789abcdef0123456789abcdef";
     serviceConfig = {
-      ExecStart = "${pkgs.tg-ws-proxy}/bin/tg-ws-proxy --host ${ip} --link-ip ${ip} --port 8443 --listen-faketls-domain 4pda.to";
+      ExecStart = "${pkgs.tg-ws-proxy-rs}/bin/tg-ws-proxy --host ${ip} --link-ip ${ip} --port 8443 --listen-faketls-domain 4pda.to";
       Restart = "on-failure";
       RestartSec = 5;
     };

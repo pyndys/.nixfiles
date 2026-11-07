@@ -9,6 +9,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    bakapkgs = {
+      url = "github:pyndys/bakapkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     disko = {
@@ -48,11 +53,6 @@
 
     nixugen.url = "github:pyndys/nixugen";
 
-    tg-ws-proxy-rs = {
-      url = "github:kerator221/tg-ws-proxy-rs-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     zapret-discord-youtube = {
       url = "github:kartavkun/zapret-discord-youtube";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -65,7 +65,6 @@
       customOverlay = final: prev: {
         fast-nix-gc = inputs.fast-nix-gc.packages.${prev.stdenv.hostPlatform.system}.default;
         helium = inputs.helium.packages.${prev.stdenv.hostPlatform.system}.default;
-        tg-ws-proxy = inputs.tg-ws-proxy-rs.packages.${prev.stdenv.hostPlatform.system}.default;
       };
       mkHost =
         host:
@@ -82,6 +81,7 @@
                 config.allowUnfree = true;
                 overlays = [
                   customOverlay
+                  inputs.bakapkgs.overlays.default
                   inputs.nixugen.overlays.default
                 ];
               };

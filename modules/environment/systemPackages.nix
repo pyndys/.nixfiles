@@ -11,6 +11,7 @@
     eza
     dust
     nix-melt
+    mikusays
     microfetch
     fast-nix-gc
     speedtest-go
