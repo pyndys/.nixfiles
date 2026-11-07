@@ -26,7 +26,7 @@ in
       };
       opencode = {
         input_path = t.opencode;
-        output_path = "${c}/themes/matugen.json";
+        output_path = "${c}/opencode/themes/matugen.json";
       };
     };
   };
