@@ -16,12 +16,6 @@
         group = "root";
         mode = "0400";
       };
-      "tg-ws-proxy" = {
-        file = ../secrets/tg-ws-proxy.age;
-        owner = "root";
-        group = "root";
-        mode = "0400";
-      };
     };
   };
 }

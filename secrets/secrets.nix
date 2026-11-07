@@ -4,5 +4,4 @@ in
 {
   "github-ssh.age".publicKeys = [ me ];
   "password.age".publicKeys = [ me ];
-  "tg-ws-proxy.age".publicKeys = [ me ];
 }

@@ -26,6 +26,7 @@
     gopls
     rustc
     python3
+    opencode
     rustlings
     rust-analyzer
     markdown-oxide

@@ -24,6 +24,10 @@ in
         input_path = t.prismlauncher;
         output_path = "${l}/PrismLauncher/themes/matugen/theme.json";
       };
+      opencode = {
+        input_path = t.opencode;
+        output_path = "${c}/themes/matugen.json";
+      };
     };
   };
 }
