@@ -4,8 +4,8 @@
     ## GUI apps
     loupe
     helium
-    materialgram
     prismlauncher
+    telegram-desktop
 
     ## CLI tools
     eza
