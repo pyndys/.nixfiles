@@ -102,28 +102,6 @@
         "type": "github"
       }
     },
-    "fast-nix-gc": {
-      "inputs": {
-        "nix-darwin": "nix-darwin",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "treefmt-nix": "treefmt-nix"
-      },
-      "locked": {
-        "lastModified": 1791463433,
-        "narHash": "sha256-CNSHu5tKx//E9+ayDlfhk9C/3JVDFxiB0PKYQA37CC4=",
-        "owner": "Mic92",
-        "repo": "fast-nix-gc",
-        "rev": "b4471ec56911541f72f7a7b9b8fee7f42183f21b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Mic92",
-        "repo": "fast-nix-gc",
-        "type": "github"
-      }
-    },
     "flake-schemas": {
       "locked": {
         "lastModified": 1780327564,
@@ -224,27 +202,6 @@
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
-          "fast-nix-gc",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1785389976,
-        "narHash": "sha256-0tLW8Ff5yt8AH97jw4ZpFJ0OCJ122zIlgWGDmOfU/VU=",
-        "owner": "nix-darwin",
-        "repo": "nix-darwin",
-        "rev": "15abb8c98f336cd8bd840d71059adebabe60bf04",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-darwin",
-        "repo": "nix-darwin",
-        "type": "github"
-      }
-    },
-    "nix-darwin_2": {
-      "inputs": {
-        "nixpkgs": [
           "nixcord",
           "nixpkgs"
         ]
@@ -267,13 +224,13 @@
     "nixcord": {
       "inputs": {
         "home-manager": "home-manager_2",
-        "nix-darwin": "nix-darwin_2",
+        "nix-darwin": "nix-darwin",
         "nixpkgs": [
           "nixpkgs"
         ],
         "nixpkgs-ci": "nixpkgs-ci",
         "nixpkgs-packages": "nixpkgs-packages",
-        "treefmt-nix": "treefmt-nix_2"
+        "treefmt-nix": "treefmt-nix"
       },
       "locked": {
         "lastModified": 1794141094,
@@ -343,11 +300,11 @@
     },
     "nixugen": {
       "locked": {
-        "lastModified": 1794055556,
-        "narHash": "sha256-Z3vww4nRwemVYma4uDSEyBd4O/VTAs0w79dr/OSgvio=",
+        "lastModified": 1794143073,
+        "narHash": "sha256-+TyCA0vL3omaERIj6q+RgqUVWeAxal77xgJfuYPBBMU=",
         "owner": "pyndys",
         "repo": "nixugen",
-        "rev": "c2542be8cedf8f8ac51743c3f01eed2ef6723d68",
+        "rev": "f4149acaa8012eb5cd0d47eeac9c8f03d291f676",
         "type": "github"
       },
       "original": {
@@ -363,7 +320,6 @@
         "chaotic": "chaotic",
         "disko": "disko",
         "dux-plugin-registry": "dux-plugin-registry",
-        "fast-nix-gc": "fast-nix-gc",
         "helium": "helium",
         "hjem": "hjem",
         "nixcord": "nixcord",
@@ -373,27 +329,6 @@
       }
     },
     "treefmt-nix": {
-      "inputs": {
-        "nixpkgs": [
-          "fast-nix-gc",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1791203292,
-        "narHash": "sha256-vuzVwvjeucSnwKwMBpyP8r5IzdrMKCHEdwTrRFwUN7I=",
-        "owner": "numtide",
-        "repo": "treefmt-nix",
-        "rev": "03d8ee1bcbc8f9638907bb79edb9673151d0e22b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "treefmt-nix",
-        "type": "github"
-      }
-    },
-    "treefmt-nix_2": {
       "inputs": {
         "nixpkgs": [
           "nixcord",

@@ -26,11 +26,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    fast-nix-gc = {
-      url = "github:Mic92/fast-nix-gc";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     helium = {
       url = "github:amaanq/helium-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -58,7 +53,6 @@
     inputs@{ nixpkgs, ... }:
     let
       customOverlay = final: prev: {
-        fast-nix-gc = inputs.fast-nix-gc.packages.${prev.stdenv.hostPlatform.system}.default;
         helium = inputs.helium.packages.${prev.stdenv.hostPlatform.system}.default;
       };
       mkHost =

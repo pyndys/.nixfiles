@@ -13,7 +13,6 @@
     nix-melt
     mikusays
     microfetch
-    fast-nix-gc
     speedtest-go
     android-tools
     payload-dumper-go
