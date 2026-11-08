@@ -27,11 +27,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1794078796,
-        "narHash": "sha256-yylArYbE5Hbba/h35RcEn4eN+eufwASJkcu3qxSgqf4=",
+        "lastModified": 1794142310,
+        "narHash": "sha256-cO0wxd9rtPqkeurelcoaoxtFCsvLg+Fsnz+Su3tI8b8=",
         "owner": "pyndys",
         "repo": "bakapkgs",
-        "rev": "432b227be62c90d2465655c8f071221d3fb07971",
+        "rev": "b858f8bbe4d6929d662a49da3fb620620aac0b3e",
         "type": "github"
       },
       "original": {
@@ -89,11 +89,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1794072285,
-        "narHash": "sha256-ansHVJKomRKqTCt2MPSZ0yO685K++2/i2bhCbOjQY5g=",
+        "lastModified": 1794142300,
+        "narHash": "sha256-OztjfK2z1yBl1NbkvCA3DPSIwjxi9ms1c91DnBLxRs4=",
         "owner": "duxlabs-dev",
         "repo": "dux-plugin-registry",
-        "rev": "c4c624215a1c3386aea3573f95f7a69e59a76236",
+        "rev": "9973cecae32b8fedc17917c3235189cacab4ea4f",
         "type": "github"
       },
       "original": {
@@ -136,22 +136,6 @@
       "original": {
         "type": "tarball",
         "url": "https://flakehub.com/f/DeterminateSystems/flake-schemas/%3D0.5.0.tar.gz"
-      }
-    },
-    "geohide": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1792461741,
-        "narHash": "sha256-xIsUhRoBsd8CfL+Nan8Il+ESsFPXeNeVh9mkoIOt/Fw=",
-        "owner": "Internet-Helper",
-        "repo": "GeoHideDNS",
-        "rev": "2ec2121993bf6240717e7d593c411a231cb92e70",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Internet-Helper",
-        "repo": "GeoHideDNS",
-        "type": "github"
       }
     },
     "helium": {
@@ -292,11 +276,11 @@
         "treefmt-nix": "treefmt-nix_2"
       },
       "locked": {
-        "lastModified": 1794083704,
-        "narHash": "sha256-6zy+LcIktHluBNcox05L3WTz69WjysodvLukDEudVmg=",
+        "lastModified": 1794141094,
+        "narHash": "sha256-35sQQC4+cscfgFBQZ06ZUg6zcMfJeQPf7t2MuwYxD1Q=",
         "owner": "4evy",
         "repo": "nixcord",
-        "rev": "f753a8d227d283406849d09e84f04236beb67e50",
+        "rev": "0533f06c66ca9a4491292a04fed7f55cc16b1931",
         "type": "github"
       },
       "original": {
@@ -380,7 +364,6 @@
         "disko": "disko",
         "dux-plugin-registry": "dux-plugin-registry",
         "fast-nix-gc": "fast-nix-gc",
-        "geohide": "geohide",
         "helium": "helium",
         "hjem": "hjem",
         "nixcord": "nixcord",

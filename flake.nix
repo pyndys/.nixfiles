@@ -31,11 +31,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    geohide = {
-      url = "github:Internet-Helper/GeoHideDNS";
-      flake = false;
-    };
-
     helium = {
       url = "github:amaanq/helium-flake";
       inputs.nixpkgs.follows = "nixpkgs";
