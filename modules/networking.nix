@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{
   networking = {
     networkmanager.enable = true;
     firewall.enable = true;
@@ -16,6 +16,5 @@
         "porn"
       ];
     };
-    hostFiles = [ "${pkgs.geohide-dns-hosts}/etc/hosts" ];
   };
 }

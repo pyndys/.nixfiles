@@ -18,16 +18,11 @@
     payload-dumper-go
 
     ## Dev
-    go
     nil
     ruff
-    clang
-    cargo
     gopls
-    rustc
     python3
     opencode
-    rustlings
     rust-analyzer
     markdown-oxide
 
