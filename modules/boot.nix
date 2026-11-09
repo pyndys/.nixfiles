@@ -13,9 +13,6 @@
     tmp.cleanOnBoot = true;
 
     kernelPackages = pkgs.linuxPackages_cachyos;
-    kernelParams = [
-      "quiet"
-      "splash"
-    ];
+    kernelParams = [ "quiet" ];
   };
 }
