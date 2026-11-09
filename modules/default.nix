@@ -12,6 +12,5 @@
     ./nix.nix
     ./run0.nix
     ./users.nix
-    ./zram.nix
   ];
 }
