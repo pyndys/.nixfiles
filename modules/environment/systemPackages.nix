@@ -27,7 +27,6 @@
     markdown-oxide
 
     ## Others
-    wl-clipboard-rs
     xwayland-satellite
     adwaita-icon-theme
     colloid-icon-theme
