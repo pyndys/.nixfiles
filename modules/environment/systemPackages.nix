@@ -9,6 +9,7 @@
 
     ## CLI tools
     dust
+    tree
     nix-melt
     mikusays
     microfetch

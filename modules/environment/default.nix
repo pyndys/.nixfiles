@@ -1,6 +1,6 @@
 {
   imports = [
+    ./sessionVariables.nix
     ./systemPackages.nix
-    ./variables.nix
   ];
 }
