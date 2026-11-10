@@ -2,15 +2,15 @@
   imports = [
     ./environment
     ./hjem
+    ./networking
     ./programs
+    ./security
     ./services
     ./age.nix
     ./boot.nix
     ./disko.nix
     ./locale.nix
-    ./networking.nix
     ./nix.nix
-    ./run0.nix
     ./users.nix
   ];
 }

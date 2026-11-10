@@ -8,7 +8,7 @@
       "wheel"
       "input"
     ];
-    shell = config.programs.fish.package;
+    shell = config.programs.zsh.package;
     hashedPasswordFile = config.age.secrets."password".path;
   };
 }

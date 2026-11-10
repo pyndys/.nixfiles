@@ -16,6 +16,12 @@
         group = "root";
         mode = "0400";
       };
+      "tg-ws-proxy" = {
+        file = ../secrets/tg-ws-proxy.age;
+        owner = "pyndys";
+        group = "users";
+        mode = "0400";
+      };
     };
   };
 }

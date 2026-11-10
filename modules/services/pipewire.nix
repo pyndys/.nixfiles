@@ -1,6 +1,4 @@
 {
-  security.rtkit.enable = true; # Enable RealtimeKit for audio purposes
-
   services.pipewire = {
     enable = true;
     alsa = {

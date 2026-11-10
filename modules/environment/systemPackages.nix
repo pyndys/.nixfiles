@@ -8,7 +8,6 @@
     telegram-desktop
 
     ## CLI tools
-    eza
     dust
     nix-melt
     mikusays

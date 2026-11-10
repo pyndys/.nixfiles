@@ -1,5 +1,6 @@
 {
   imports = [
+    ./bluetooth.nix
     ./watt
     ./hardware-configuration.nix
     ./upower.nix
