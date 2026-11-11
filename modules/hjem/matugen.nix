@@ -28,6 +28,10 @@ in
         input_path = t.opencode;
         output_path = "${c}/opencode/themes/matugen.json";
       };
+      glow = {
+        input_path = t.glow;
+        output_path = "${c}/glow/matugen.json";
+      };
     };
   };
 }

@@ -8,6 +8,7 @@
       user = "pyndys";
       imports = [
         ./ghostty.nix
+        ./glow.nix
         ./helix.nix
         ./matugen.nix
       ];
