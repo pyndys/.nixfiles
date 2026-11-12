@@ -2,10 +2,8 @@
   imports = [
     ./fstrim.nix
     ./gvfs.nix
+    ./mihomo.nix
     ./pipewire.nix
-    ./resolved.nix
     ./scx-loader.nix
-    ./tg-ws-proxy.nix
-    ./zapret-discord-youtube.nix
   ];
 }

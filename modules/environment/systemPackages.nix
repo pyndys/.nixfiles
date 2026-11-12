@@ -11,7 +11,6 @@
     dust
     tree
     nix-melt
-    mikusays
     microfetch
     speedtest-go
     android-tools

@@ -9,11 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    bakapkgs = {
-      url = "github:pyndys/bakapkgs";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
     disko = {
@@ -42,11 +37,6 @@
     };
 
     nixugen.url = "github:pyndys/nixugen";
-
-    zapret-discord-youtube = {
-      url = "github:kartavkun/zapret-discord-youtube";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
@@ -69,7 +59,6 @@
                 config.allowUnfree = true;
                 overlays = [
                   customOverlay
-                  inputs.bakapkgs.overlays.default
                   inputs.nixugen.overlays.default
                 ];
               };

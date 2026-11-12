@@ -4,6 +4,12 @@
   age = {
     identityPaths = [ "/etc/agenix/id_ed25519" ];
     secrets = {
+      "clash-config" = {
+        file = ../secrets/clash-config.age;
+        owner = "root";
+        group = "root";
+        mode = "0400";
+      };
       "github-ssh" = {
         file = ../secrets/github-ssh.age;
         owner = "pyndys";
@@ -14,12 +20,6 @@
         file = ../secrets/password.age;
         owner = "root";
         group = "root";
-        mode = "0400";
-      };
-      "tg-ws-proxy" = {
-        file = ../secrets/tg-ws-proxy.age;
-        owner = "pyndys";
-        group = "users";
         mode = "0400";
       };
     };
