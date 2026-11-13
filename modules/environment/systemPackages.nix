@@ -10,6 +10,7 @@
     ## CLI tools
     dust
     tree
+    nix-auth
     nix-melt
     microfetch
     speedtest-go
