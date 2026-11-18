@@ -2,7 +2,7 @@
   imports = [
     ./dux
     ./git.nix
-    ./kdeconnect.nix
+    ./localsend.nix
     ./nh.nix
     ./niri.nix
     ./nixcord.nix

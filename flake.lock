@@ -41,26 +41,6 @@
         "type": "github"
       }
     },
-    "dux-plugin-registry": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1795014866,
-        "narHash": "sha256-zhpTCSUgRti+Y1iQEvHX/8WqGxCbjCQugI+sVkUdaTY=",
-        "owner": "duxlabs-dev",
-        "repo": "dux-plugin-registry",
-        "rev": "cd42fd4609d3ea70924b14f8598f5d4c65a828d3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "duxlabs-dev",
-        "repo": "dux-plugin-registry",
-        "type": "github"
-      }
-    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -314,7 +294,6 @@
       "inputs": {
         "agenix": "agenix",
         "disko": "disko",
-        "dux-plugin-registry": "dux-plugin-registry",
         "helium": "helium",
         "hjem": "hjem",
         "nix-cachyos-kernel": "nix-cachyos-kernel",
