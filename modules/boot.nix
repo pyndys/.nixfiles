@@ -12,7 +12,7 @@
 
     tmp.cleanOnBoot = true;
 
-    kernelPackages = pkgs.linuxPackages_cachyos;
+    kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest-lto-x86_64-v3;
     kernelParams = [ "quiet" ];
   };
 }
