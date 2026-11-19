@@ -16,7 +16,6 @@
     microfetch
     speedtest-go
     android-tools
-    payload-dumper-go
 
     ## Dev
     nil
@@ -28,8 +27,7 @@
     markdown-oxide
 
     ## Others
-    xwayland-satellite
     adwaita-icon-theme
-    colloid-icon-theme
+    xwayland-satellite
   ];
 }

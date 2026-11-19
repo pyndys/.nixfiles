@@ -277,11 +277,11 @@
     },
     "nixugen": {
       "locked": {
-        "lastModified": 1795015619,
-        "narHash": "sha256-s6d57It0SU5fM9De9j8ydUB5Ux+0iU/qym7FRaW7lbE=",
+        "lastModified": 1795102318,
+        "narHash": "sha256-8p4WqxHZmE+Q39u2hBmvSYLn+kWDGiDqAzMAOq32cC8=",
         "owner": "pyndys",
         "repo": "nixugen",
-        "rev": "557f85716b7eba061b7b40f09bf7149f6a82d152",
+        "rev": "108336a1d86c9be8215032e9ea956eeaba54aa44",
         "type": "github"
       },
       "original": {
