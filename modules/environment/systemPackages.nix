@@ -10,6 +10,7 @@
     ## CLI tools
     dust
     tree
+    aria2
     nix-auth
     nix-melt
     microfetch
