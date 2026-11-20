@@ -27,7 +27,7 @@
     markdown-oxide
 
     ## Others
-    adwaita-icon-theme
+    morewaita-icon-theme
     xwayland-satellite
   ];
 }

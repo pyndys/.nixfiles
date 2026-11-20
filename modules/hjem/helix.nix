@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  packages = [ pkgs.helix ];
+  packages = [ pkgs.helix_git ];
 
   xdg.config.files = {
     "helix/config.toml".source = (pkgs.formats.toml { }).generate "hx_config.toml" {

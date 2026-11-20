@@ -9,6 +9,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+
     disko = {
       url = "github:nix-community/disko/latest";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,8 +25,6 @@
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
 
     nixcord = {
       url = "github:4evy/nixcord";
@@ -47,13 +47,13 @@
           modules = [
             ./hosts/${host}
             ./modules
+            inputs.chaotic.nixosModules.default
             inputs.hjem.nixosModules.default
             {
               nixpkgs = {
                 config.allowUnfree = true;
                 overlays = [
                   customOverlay
-                  inputs.nix-cachyos-kernel.overlays.pinned
                   inputs.nixugen.overlays.default
                 ];
               };

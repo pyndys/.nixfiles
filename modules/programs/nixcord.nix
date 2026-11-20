@@ -9,6 +9,7 @@
     discord = {
       enable = true;
       equicord.enable = true;
+      openASAR.enable = false;
     };
 
     extraConfig.nativeTitleBar = true;
