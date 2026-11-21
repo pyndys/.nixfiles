@@ -2,7 +2,6 @@
 {
   environment.systemPackages = with pkgs; [
     ## GUI apps
-    loupe
     helium
     metrolist
     prismlauncher

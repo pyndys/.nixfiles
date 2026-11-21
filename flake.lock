@@ -166,11 +166,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1795280523,
-        "narHash": "sha256-1jDvDG/YrPUKzAdRvDd/9pL2g4G38HGTi6SBZchABew=",
+        "lastModified": 1795283546,
+        "narHash": "sha256-TSgcWs7reBItrVeE/7eCOG3bHUp/985LosuCChFH66g=",
         "owner": "MetrolistGroup",
         "repo": "Metrolist",
-        "rev": "221b68997a5ab92980c82699b7ee40560404dd00",
+        "rev": "423bc68f69dbb505d2139c9b09a3ba76026d1457",
         "type": "github"
       },
       "original": {
