@@ -7,10 +7,10 @@
       directory = "/home/pyndys";
       user = "pyndys";
       imports = [
+        ./matugen
         ./ghostty.nix
         ./glow.nix
         ./helix.nix
-        ./matugen.nix
       ];
     };
   };

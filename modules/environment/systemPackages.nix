@@ -4,13 +4,13 @@
     ## GUI apps
     loupe
     helium
+    metrolist
     prismlauncher
     telegram-desktop
 
     ## CLI tools
     dust
     tree
-    aria2
     nix-auth
     nix-melt
     microfetch

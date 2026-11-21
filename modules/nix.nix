@@ -1,10 +1,7 @@
 {
   nix = {
     settings = {
-      substituters = [
-        "https://mirror.yandex.ru/nixos"
-        "https://cache.nixos.org"
-      ];
+      substituters = [ "https://mirror.yandex.ru/nixos" ];
       experimental-features = [
         "nix-command"
         "flakes"

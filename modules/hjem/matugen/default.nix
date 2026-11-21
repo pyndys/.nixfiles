@@ -32,6 +32,10 @@ in
         input_path = t.glow;
         output_path = "${c}/glow/matugen.json";
       };
+      metrolist = {
+        input_path = ./metrolist-template.properties;
+        output_path = "${c}/metrolist/matugen.properties";
+      };
     };
   };
 }

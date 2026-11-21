@@ -26,6 +26,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    metrolist = {
+      url = "github:MetrolistGroup/Metrolist";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixcord = {
       url = "github:4evy/nixcord";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -39,6 +44,7 @@
     let
       customOverlay = final: prev: {
         helium = inputs.helium.packages.${prev.stdenv.hostPlatform.system}.default;
+        metrolist = inputs.metrolist.packages.${prev.stdenv.hostPlatform.system}.default;
       };
       mkHost =
         host:
