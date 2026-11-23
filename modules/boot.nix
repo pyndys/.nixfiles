@@ -1,4 +1,4 @@
-{
+{ lib, pkgs, ... }: {
   boot = {
     loader = {
       systemd-boot = {
@@ -11,6 +11,7 @@
 
     tmp.cleanOnBoot = true;
 
+    kernelPackages = lib.mkDefault pkgs.linuxPackages_latest;
     kernelParams = [ "quiet" ];
   };
 }
