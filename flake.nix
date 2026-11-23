@@ -52,7 +52,6 @@
           specialArgs = { inherit inputs; };
           modules = [
             ./hosts/${host}
-            ./modules
             inputs.chaotic.nixosModules.default
             inputs.hjem.nixosModules.default
             {

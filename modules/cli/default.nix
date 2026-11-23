@@ -1,14 +1,12 @@
 {
   imports = [
-    ./dux
+    ./environment.nix
     ./fzf.nix
     ./git.nix
-    ./localsend.nix
+    ./hjem.nix
     ./nh.nix
-    ./niri.nix
-    ./nixcord.nix
+    ./packages.nix
     ./ssh.nix
-    ./steam.nix
     ./zoxide.nix
     ./zsh.nix
   ];
