@@ -166,11 +166,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1795448811,
-        "narHash": "sha256-7nxMTJ+lONFjI2tsvcNb7QUHXS0ynwmpo581vUgbVeU=",
+        "lastModified": 1795525343,
+        "narHash": "sha256-a2e0azVMfCxW1RXKmqZzj18J1g4FWzRd0NLbw5cce/Q=",
         "owner": "MetrolistGroup",
         "repo": "Metrolist",
-        "rev": "d05f000ec9fd76a63913790b81a712b68659c151",
+        "rev": "6240b7535fac8a0482075851c71ba9e493e744b4",
         "type": "github"
       },
       "original": {
@@ -213,11 +213,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1795436465,
-        "narHash": "sha256-CO+q2GRK97s9JLnpSp3vWWVdiiErg03QnIfBaANM2g8=",
+        "lastModified": 1795497561,
+        "narHash": "sha256-a9C8FwAhs3iywcUemPHji1LbFIVqN/g+urTSiTOSYQ8=",
         "owner": "4evy",
         "repo": "nixcord",
-        "rev": "b992d21f7b504ee1a274ae011b99d3639552df4c",
+        "rev": "30826fa4157dc9d2753fc1b0e2d0cc83c4efa0ce",
         "type": "github"
       },
       "original": {
@@ -280,11 +280,11 @@
     },
     "nixugen": {
       "locked": {
-        "lastModified": 1795357443,
-        "narHash": "sha256-f4H+/ZN15sz6EP69FNTUtPoro5yogutZnGHAQWheL8Y=",
+        "lastModified": 1795456100,
+        "narHash": "sha256-/YuST3BpdMbzAGx8g7INRkI/CMNffXIAZXJjsOdV720=",
         "owner": "pyndys",
         "repo": "nixugen",
-        "rev": "6dc51915c271e8f863b1c2ff9255a71804c3334b",
+        "rev": "2e3bef4ff288e2cc114b189807e35698cfa233af",
         "type": "github"
       },
       "original": {

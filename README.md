@@ -1,11 +1,11 @@
-# Just my dotfiles for NixOS/Home-Manager
+# Just my dotfiles for NixOS
 
 |env     | attribute                    |
 |--------|------------------------------|
-|de | niri + dms |
-|shell | fish |
+|hosts | cv01, tetobook |
+|desktop | niri + dms |
+|shell | zsh |
 |terminal| ghostty |
 |editor | helix |
 
 and others...
-
