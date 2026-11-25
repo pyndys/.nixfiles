@@ -1,8 +1,12 @@
 {
   imports = [
     ./dux
-    ./hjem.nix
+    ./ghostty
     ./niri.nix
     ./packages.nix
+  ];
+
+  hjem.users.pyndys.imports = [
+    ./matugen.nix
   ];
 }

@@ -3,8 +3,10 @@
     ./environment.nix
     ./fzf.nix
     ./git.nix
-    ./hjem.nix
+    ./glow
+    ./helix
     ./nh.nix
+    ./opencode
     ./packages.nix
     ./ssh.nix
     ./zoxide.nix

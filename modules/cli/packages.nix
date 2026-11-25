@@ -15,7 +15,6 @@
     gopls
     markdown-oxide
     nil
-    opencode
     python3
     ruff
     rust-analyzer

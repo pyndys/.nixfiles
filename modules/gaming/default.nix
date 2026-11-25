@@ -1,7 +1,7 @@
 {
   imports = [
-    ./hjem.nix
     ./packages.nix
-    ./steam.nix
+    ./prismlauncher
+    ./steam
   ];
 }

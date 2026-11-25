@@ -2,6 +2,10 @@
 {
   imports = [ inputs.nixcord.nixosModules.nixcord ];
 
+  hjem.users.pyndys.imports = [
+    ./matugen.nix
+  ];
+
   programs.nixcord = {
     enable = true;
     user = "pyndys";

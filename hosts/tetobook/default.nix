@@ -10,7 +10,7 @@
     ../../modules/desktop
     ../../modules/cli
     ../../modules/apps
-    # ../../modules/gaming
+    ../../modules/gaming/prismlauncher
   ];
   networking.hostName = "tetobook";
   system.stateVersion = "26.11";

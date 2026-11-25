@@ -7,4 +7,8 @@
     ## Needed for some games (e.g. Garry's Mod)
     fontPackages = with pkgs; [ liberation_ttf ];
   };
+
+  hjem.users.pyndys.imports = [
+    ./matugen.nix
+  ];
 }

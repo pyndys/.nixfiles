@@ -1,8 +1,8 @@
 {
   imports = [
-    ./hjem.nix
     ./localsend.nix
-    ./nixcord.nix
+    ./metrolist
+    ./nixcord
     ./packages.nix
   ];
 }
