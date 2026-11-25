@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     ## CLI tools
     android-tools
+    aria2
     dust
     microfetch
     nix-auth
