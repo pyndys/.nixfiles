@@ -24,21 +24,14 @@ cd .nixfiles
 ```
 
 ```sh
-# mount the Ventoy drive (sdX1 from `lsblk -f`)
-lsblk -f
-sudo mkdir -p /run/media/ventoy
-sudo mount /dev/sdX1 /run/media/ventoy
-```
-
-```sh
 # disko: cv01 or tetobook, wipes /dev/nvme0n1
-sudo -E nix run github:nix-community/disko/latest -- --mode disko --flake .#cv01
+sudo -E nix run github:nix-community/disko/latest -- --mode destroy,format,mount --flake .#cv01
 ```
 
 ```sh
 # age key from the Ventoy drive (passwordless)
 sudo mkdir -p /mnt/etc/agenix
-sudo install -m 600 -o root -g root /run/media/ventoy/id_ed25519 /mnt/etc/agenix/id_ed25519
+sudo install -m 600 -o root -g root /run/media/nixos/Ventoy/id_ed25519 /mnt/etc/agenix/id_ed25519
 ```
 
 ```sh
